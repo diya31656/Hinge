@@ -7,7 +7,6 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-
     <com.yqritc.scalablevideoview.ScalableVideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
@@ -19,65 +18,80 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="@dimen/hinge_full_logo_width"
-        android:layout_height="@dimen/hinge_full_logo_height"
-        android:layout_marginTop="@dimen/hinge_full_logo_top_margin"
+        style="@style/logo_style"
         android:src="@drawable/ic_hinge_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/hinge_full_logo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/second_title_text_szie"
+        style="@style/second_title"
         android:text="@string/designed_to_be_deleted"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-   <!-- <TextView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="By signing up for Hinge, you agree to our"
-         android:textColor="@color/white"
-         />
--->
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/policy_style"
+        android:layout_marginStart="@dimen/policy_margin_start"
+        android:text="@string/by_signing_up_for_hinge_you_agree_to_our"
+        app:layout_constraintBottom_toTopOf="@+id/tvTermsofService"
+        app:layout_constraintStart_toStartOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/tvTermsofService"
+        style="@style/policy_style"
+        android:text="@string/terms_of_service"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <TextView
+        style="@style/policy_style"
+        android:text="@string/learn_how_we_process"
+        app:layout_constraintBottom_toTopOf="@+id/tvPrivacyPolicy"
+        app:layout_constraintStart_toEndOf="@+id/tvTermsofService" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/policy_style"
+        android:layout_marginBottom="@dimen/policy_marginbotoom"
+        android:text="@string/your_data_in_our"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tvPrivacyPolicy"
+        style="@style/policy_style"
+        android:text="@string/privacy_policy"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="100dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="42dp"
+        android:id="@+id/cardView2"
+        style="@style/viewFacebookSignUP"
+        android:background="@color/faceBook_btn_background"
+        app:cardCornerRadius="@dimen/btn_facebook_radius"
         app:layout_constraintBottom_toTopOf="@+id/tvPhone"
-        android:layout_marginBottom="21dp"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:layout_height="55dp"
-            android:layout_width="match_parent"
-            android:drawableStart="@drawable/ic_facebook"
-            android:background="@color/faceBook_btn_background"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
+            style="@style/btn_facebook_style"
             android:text="@string/continue_with_facebook"
-            android:gravity="center"
-            android:paddingLeft="60dp"
-            android:paddingRight="60dp" />
+            android:drawableStart="@drawable/ic_facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/policy_style"
         android:layout_marginBottom="@dimen/phone_number_margin_bottom"
         android:text="@string/or_continue_with_phone_number"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/videoView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
