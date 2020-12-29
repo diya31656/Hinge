@@ -82,12 +82,14 @@
             android:text="@string/continue_with_facebook"
             android:drawableStart="@drawable/ic_facebook"
             android:textAllCaps="false"
+            android:fontFamily="@font/modern_era_extra_bold"
             android:textColor="@color/white" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvPhone"
         style="@style/policy_style"
+        android:fontFamily="@font/modern_era_extra_bold"
         android:layout_marginBottom="@dimen/phone_number_margin_bottom"
         android:text="@string/or_continue_with_phone_number"
         app:layout_constraintBottom_toBottomOf="@+id/videoView"

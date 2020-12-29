@@ -17,6 +17,7 @@
         <item name="android:gravity">center</item>
         <item name="android:paddingLeft">@dimen/btn_facebook_padding</item>
         <item name="android:paddingRight">@dimen/btn_facebook_padding</item>
+        <item name="android:fontFamily">@font/modern_era_extra_bold</item>
     </style>
 
     <style name="logo_style">
@@ -30,12 +31,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text_white</item>
         <item name="android:textSize">@dimen/second_title_text_szie</item>
+        <item name="android:fontFamily">@font/modern_era_medium</item>
     </style>
 
     <style name="policy_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/text_white</item>
+        <item name="android:fontFamily">@font/modern_era_regular</item>
     </style>
 
 </resources>
