@@ -20,8 +20,8 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="@dimen/hinge_full_logo_width"
-        android:layout_height="60dp"
-        android:layout_marginTop="55dp"
+        android:layout_height="@dimen/hinge_full_logo_height"
+        android:layout_marginTop="@dimen/hinge_full_logo_top_margin"
         android:src="@drawable/ic_hinge_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,11 +31,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="@dimen/second_title_text_szie"
         android:text="@string/designed_to_be_deleted"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <!-- <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="By signing up for Hinge, you agree to our"
+         android:textColor="@color/white"
+         />
+ -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPhone"
+       android:layout_marginBottom="22dp"
+        >
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/faceBook_btn_background"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="@string/continue_with_facebook"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/phone_number_margin_bottom"
+        android:text="@string/or_continue_with_phone_number"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/videoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Hinge</string>
     <string name="designed_to_be_deleted">Designed to be deleted.</string>
+    <string name="or_continue_with_phone_number">Or continue with phone number</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
 </resources>
