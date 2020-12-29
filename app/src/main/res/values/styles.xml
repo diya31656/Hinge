@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="viewFacebookSignUP">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:layout_marginEnd">42dp</item>
+        <item name="android:layout_marginBottom">21dp</item>
+        <item name="android:background">@color/faceBook_btn_background</item>
+    </style>
+
+    <style name="btn_facebook_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_facebook_height</item>
+        <item name="android:background">@color/faceBook_btn_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/btn_facebook_padding</item>
+        <item name="android:paddingRight">@dimen/btn_facebook_padding</item>
+        <item name="android:fontFamily">@font/modern_era_extra_bold</item>
+    </style>
+
+    <style name="logo_style">
+        <item name="android:layout_width">@dimen/hinge_full_logo_width</item>
+        <item name="android:layout_height">@dimen/hinge_full_logo_height</item>
+        <item name="android:layout_marginTop">@dimen/hinge_full_logo_top_margin</item>
+    </style>
+
+    <style name="second_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/second_title_text_szie</item>
+        <item name="android:fontFamily">@font/modern_era_medium</item>
+    </style>
+
+    <style name="policy_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:fontFamily">@font/modern_era_regular</item>
+    </style>
 
 </resources>
