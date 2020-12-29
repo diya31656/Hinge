@@ -37,13 +37,13 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <!-- <TextView
+   <!-- <TextView
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:text="By signing up for Hinge, you agree to our"
          android:textColor="@color/white"
          />
- -->
+-->
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -52,18 +52,20 @@
         android:layout_marginStart="42dp"
         android:layout_marginEnd="42dp"
         app:layout_constraintBottom_toTopOf="@+id/tvPhone"
-       android:layout_marginBottom="22dp"
+        android:layout_marginBottom="21dp"
         >
-        <Button
 
+        <Button
+            android:layout_height="55dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_facebook"
             android:background="@color/faceBook_btn_background"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:text="@string/continue_with_facebook"
-            />
-
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp" />
     </androidx.cardview.widget.CardView>
 
     <TextView
