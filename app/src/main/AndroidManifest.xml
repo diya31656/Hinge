@@ -10,8 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
 
+
         <activity android:name=".SettingActivity"></activity>
         <activity android:name=".verified"></activity>
+ master
         <activity android:name=".otp_screen" />
         <activity android:name=".phone_num" />
 

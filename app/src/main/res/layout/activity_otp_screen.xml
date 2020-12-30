@@ -28,8 +28,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter your verification code"
-        android:textSize="40sp"
+        android:text="Enter your"
+        android:textSize="30sp"
         android:textColor="#000000"
         android:textStyle="bold"
         android:fontFamily="sans-serif"
@@ -38,56 +38,67 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sent to +91 9036870487 ."
-        android:textColor="#A0A0A0"
-        android:textSize="20dp"
+        android:text="verification code"
         android:layout_below="@id/textView"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sent to +91 9036870487 ."
+        android:textColor="#696969"
+        android:textSize="15sp"
+        android:layout_marginTop="240dp"
         android:layout_marginStart="30dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Edit"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         android:textColor="#763568"
-        android:layout_below="@id/textView"
-        android:layout_marginStart="270dp"/>
+        android:layout_marginTop="232dp"
+        android:layout_marginStart="210dp"/>
     <View
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="5dp"
         android:background="#B0B0B0"
         android:layout_marginTop="350dp"
         android:layout_marginStart="30dp"/>
     <View
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="5dp"
         android:background="#B0B0B0"
         android:layout_marginTop="350dp"
-        android:layout_marginStart="85dp"/>
+        android:layout_marginStart="80dp"/>
     <View
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="5dp"
         android:background="#B0B0B0"
         android:layout_marginTop="350dp"
-        android:layout_marginStart="140dp"/>
+        android:layout_marginStart="130dp"/>
     <View
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="5dp"
         android:background="#B0B0B0"
         android:layout_marginTop="350dp"
-        android:layout_marginStart="195dp"/>
+        android:layout_marginStart="180dp"/>
     <View
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="5dp"
         android:background="#B0B0B0"
         android:layout_marginTop="350dp"
-        android:layout_marginStart="255dp"/>
+        android:layout_marginStart="230dp"/>
     <View
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="5dp"
         android:background="#B0B0B0"
         android:layout_marginTop="350dp"
-        android:layout_marginStart="310dp"/>
+        android:layout_marginStart="280dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
