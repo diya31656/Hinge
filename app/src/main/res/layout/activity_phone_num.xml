@@ -24,22 +24,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:textSize="40dp"
-        android:text="What's your phone"
+        android:textSize="40sp"
+        android:text="What's your phone number?"
         android:layout_marginTop="150dp"
         android:layout_marginStart="30dp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="number?"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_below="@id/tvphone"
-        android:layout_marginStart="30dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
