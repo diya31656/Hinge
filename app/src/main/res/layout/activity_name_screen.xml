@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".name_screen">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle1_bg"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_text"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's your"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name?"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First name"
+        android:textSize="30sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="260dp"/>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:background="#B0B0B0"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last name"
+        android:textSize="30sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="330dp"/>
+    <View
+        android:layout_width="350dp"
+        android:layout_height="3dp"
+        android:background="#B0B0B0"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last name is optional, and only"
+        android:textSize="18sp"
+        android:id="@+id/tvtext"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="shared with matches"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_below="@id/tvtext"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="why?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#763568"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="210dp"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_name_bg"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="475dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visible on profile"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="80dp"
+        android:textStyle="normal"
+        android:textColor="#696969"
+        android:textSize="20sp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/tvcircle"
+        android:layout_marginTop="670dp"
+        android:layout_marginStart="350dp"
+        android:background="@drawable/circle"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_right_arrow"
+        android:layout_marginStart="365dp"
+        android:layout_marginTop="685dp"/>
+
+</>
