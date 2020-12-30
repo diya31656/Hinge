@@ -117,5 +117,30 @@
         <item name="android:textSize">@dimen/discover_element_content_textsize</item>
     </style>
 
+    <style name="discover_Horizondal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/discover_elements_title_textview_margin
+        </item>
+        <item name="android:layout_marginEnd">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:src">@drawable/line_horizondal</item>
+    </style>
+
+    <style name="discover_userInformation_textView_style2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/discover_drawable_padding</item>
+    </style>
+
+    <style name="btoom_action_bar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/bottom_action_background</item>
+    </style>
 
 </resources>

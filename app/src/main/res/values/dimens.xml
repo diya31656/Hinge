@@ -28,4 +28,7 @@
     <dimen name="discover_constraint_textonly_padding">10dp</dimen>
     <dimen name="discover_constraintLayout_padding_Top">50dp</dimen>
     <dimen name="discover_element_content_textsize">35sp</dimen>
+    <dimen name="tv_information_drawable_style">13dp</dimen>
+    <dimen name="discover_drawable_padding">10dp</dimen>
+    <dimen name="decline_button_padding">20dp</dimen>
 </resources>

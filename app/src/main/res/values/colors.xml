@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="faceBook_btn_background">#692F60</color>
     <color name="text_white">#FFFFFFFF</color>
+    <color name="bottom_action_background">#1A1A1A</color>
 </resources>
