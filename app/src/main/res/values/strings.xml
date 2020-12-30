@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Hinge</string>
     <string name="designed_to_be_deleted">Designed to be deleted.</string>
     <string name="or_continue_with_phone_number">Or continue with phone number</string>
@@ -20,5 +20,12 @@
     <string name="hinge_full_logo">Hinge full logo</string>
     <string name="_0_complete">0% Complete</string>
     <string name="edit">Edit</string>
+    <string name="i_m_interested_in" tools:ignore="StringEscaping">I'm interested in</string>
+    <string name="my_location">My location</string>
+    <string name="age_range">Age range</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="maximum_distance">Maximum distance</string>
+    <string name="basic_preference">Basic Preferences</string>
+    <string name="member_preferences">Member Preferences</string>
 
 </resources>

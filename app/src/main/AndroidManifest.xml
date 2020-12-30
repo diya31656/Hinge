@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
-        <activity android:name=".Boost"></activity>
+        <activity android:name=".Prefernce_Activity"></activity>
+        <activity android:name=".Boost" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".verified" />
         <activity android:name=".otp_screen" />
