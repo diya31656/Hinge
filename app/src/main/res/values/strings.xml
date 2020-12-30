@@ -12,4 +12,11 @@
     <string name="learnmore">Learn more</string>
     <string name="prefered_member">Preferred Members go on twice as many dates.</string>
     <string name="just_joined">Just Joined</string>
+    <string name="terms_of_service"><u>Terms of Service</u>.<b> </b></string>
+    <string name="privacy_policy"><u>Privacy Policy</u>.</string>
+    <string name="your_data_in_our">your data in our<b> </b></string>
+    <string name="learn_how_we_process">Learn how we process</string>
+    <string name="by_signing_up_for_hinge_you_agree_to_our">By signing up for Hinge, you agree to our</string>
+    <string name="hinge_full_logo">Hinge full logo</string>
+
 </resources>
