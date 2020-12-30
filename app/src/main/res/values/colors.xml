@@ -12,4 +12,7 @@
     <color name="line">#a9a9a9</color>
     <color name="text_white">#FFFFFFFF</color>
 
+    <color name="bottom_action_background">#1A1A1A</color>
+
+
 </resources>
