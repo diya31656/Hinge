@@ -5,4 +5,6 @@
     <dimen name="hinge_full_logo_height">60dp</dimen>
     <dimen name="second_title_text_szie">20sp</dimen>
     <dimen name="phone_number_margin_bottom">46dp</dimen>
+    <dimen name="setting_Font_size">25sp</dimen>
+    <dimen name="boost_size">8sp</dimen>
 </resources>
