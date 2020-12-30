@@ -5,9 +5,12 @@
     <dimen name="hinge_full_logo_height">60dp</dimen>
     <dimen name="second_title_text_szie">20sp</dimen>
     <dimen name="phone_number_margin_bottom">46dp</dimen>
+    <dimen name="setting_Font_size">25sp</dimen>
+    <dimen name="boost_size">8sp</dimen>
     <dimen name="btn_facebook_height">55dp</dimen>
     <dimen name="btn_facebook_padding">60dp</dimen>
     <dimen name="policy_margin_start">6dp</dimen>
     <dimen name="policy_marginbotoom">15dp</dimen>
     <dimen name="btn_facebook_radius">100dp</dimen>
+
 </resources>
