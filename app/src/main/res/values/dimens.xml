@@ -10,4 +10,22 @@
     <dimen name="policy_margin_start">6dp</dimen>
     <dimen name="policy_marginbotoom">15dp</dimen>
     <dimen name="btn_facebook_radius">100dp</dimen>
+    <dimen name="actionbar_card_elevation">10dp</dimen>
+    <dimen name="actionbar_cardview_height">55dp</dimen>
+    <dimen name="tv_title_name_marginStart">25dp</dimen>
+    <dimen name="tv_title_name_textSize">23sp</dimen>
+    <dimen name="overflow_icon_margin">17dp</dimen>
+    <dimen name="discover_elements_cardView_margin">12dp</dimen>
+    <dimen name="discover_elements_cardView_marginTop">20dp</dimen>
+    <dimen name="discover_elements_cardView_cornerRadius">10dp</dimen>
+    <dimen name="discover_elements_title_textview_margin">15dp</dimen>
+    <dimen name="discover_elements_title_textview_textSzie">15sp</dimen>
+    <dimen name="discover_elements_imageviewheighht">370dp</dimen>
+    <dimen name="discover_elements_likeBackground_margin">15dp</dimen>
+    <dimen name="discover_element_like_background_radiaus">360dp</dimen>
+    <dimen name="like_button_height_width">23dp</dimen>
+    <dimen name="like_button_margin">15dp</dimen>
+    <dimen name="discover_constraint_textonly_padding">10dp</dimen>
+    <dimen name="discover_constraintLayout_padding_Top">50dp</dimen>
+    <dimen name="discover_element_content_textsize">35sp</dimen>
 </resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".DiscoverActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/actionbar_cardView_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvName_discover"
+            style="@style/discover_title_textStyle"
+            android:text="@string/lisa"
+            android:textColor="@color/black" />
+
+        <ImageView
+            style="@style/overflow_icon_style"
+            android:src="@drawable/ic_discover_overflow" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvImageTitle"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/looking_for_an_android_developer"
+                        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisa"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/discover_elements_constraint_forTextonly">
+
+                    <TextView
+                        android:id="@+id/tvTextContentTitle1"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="The way to win me over is"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTextContent1"
+                        style="@style/discover_elements_content_text_style"
+                        android:text="@string/by_showing_me_the_code"
+                        app:layout_constraintBottom_toTopOf="@id/likeBackground"
+                        app:layout_constraintStart_toStartOf="@+id/tvTextContentTitle1"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTextContentTitle1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/likeBackground"
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/tvTextContentLike1"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImagecard2"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleImage2"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/when_i_see_an_android_developer"
+                        app:layout_constraintBottom_toTopOf="@+id/ivUserImage2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivUserImage2"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisatwo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/ivImagelike2"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserDetail"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:drawableStart="@drawable/ic_age"
+                        android:gravity="center"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="21"
+                        />
+                </HorizontalScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
