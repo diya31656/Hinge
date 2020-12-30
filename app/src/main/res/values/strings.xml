@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Hinge</string>
     <string name="designed_to_be_deleted">Designed to be deleted.</string>
+    <string name="or_continue_with_phone_number">Or continue with phone number</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="settings">Settings</string>
+    <string name="boost">Boost</string>
+    <string name="help_centre">Help Centre</string>
+    <string name="account">Account</string>
+    <string name="preference">Preferences</string>
+    <string name="Name">Nipun</string>
+    <string name="learnmore">Learn more</string>
+    <string name="prefered_member">Preferred Members go on twice as many dates.</string>
+    <string name="just_joined">Just Joined</string>
+    <string name="terms_of_service"><u>Terms of Service</u>.<b> </b></string>
+    <string name="privacy_policy"><u>Privacy Policy</u>.</string>
+    <string name="your_data_in_our">your data in our<b> </b></string>
+    <string name="learn_how_we_process">Learn how we process</string>
+    <string name="by_signing_up_for_hinge_you_agree_to_our">By signing up for Hinge, you agree to our</string>
+    <string name="hinge_full_logo">Hinge full logo</string>
+
 </resources>
