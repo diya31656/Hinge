@@ -78,6 +78,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/btn_facebook"
             style="@style/btn_facebook_style"
             android:text="@string/continue_with_facebook"
             android:drawableStart="@drawable/ic_facebook"

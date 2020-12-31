@@ -1,115 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".phone_num">
 
     <ImageView
+        android:id="@+id/ivCircle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/circle1_bg"
-        android:layout_marginTop="65dp"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="55dp" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_telephone"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="80dp" />
+        android:layout_alignStart="@+id/ivCircle"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_alignEnd="@+id/ivCircle"
+        android:layout_alignBottom="@+id/ivCircle"
+        android:padding="10dp"
+        android:src="@drawable/ic_telephone" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What,s your"
+        android:layout_below="@id/ivCircle"
         android:textSize="30sp"
         android:textColor="#000000"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tiempos_headline_bold"
+        android:text="@string/what_s_your" />
+
     <TextView
+        android:id="@+id/number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="phone number?"
+        android:layout_marginStart="35dp"
+        android:fontFamily="@font/tiempos_headline_bold"
         android:layout_below="@id/textView"
         android:textSize="30sp"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:fontFamily="sans-serif"
-        android:layout_marginStart="30dp"/>
+        android:text="number?" />
 
     <TextView
+        style="@style/standout_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:layout_below="@+id/etPhoneNumber"
+        android:layout_marginStart="30dp"
         android:text="Hinge will send you a text with a verification code. Message and data rates may apply."
-        android:textSize="18sp"
-        android:layout_marginTop="380dp"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginTop="20dp"
+        android:textColor="@color/line" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:src="@drawable/ic_india"
-        android:layout_marginTop="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
         android:id="@+id/tvflag"
-        android:layout_marginStart="30dp"
-        android:layout_height="wrap_content"/>
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="115dp" />
+
     <TextView
+        android:id="@+id/tvcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+91"
-        android:id="@+id/tvcode"
+        android:layout_alignTop="@+id/tvflag"
+        android:layout_marginStart="10dp"
+
         android:layout_toEndOf="@id/tvflag"
-        android:layout_marginTop="300dp"
-        android:textSize="40sp"
-        android:textStyle="bold"
+        android:text="+91"
         android:textColor="@color/black"
-        android:layout_marginStart="10dp"/>
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_marginTop="325dp"
         android:layout_toEndOf="@id/tvcode"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_down_arrow"/>
+        android:src="@drawable/ic_down_arrow" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:layout_marginStart="30dp"
-        android:padding="75dp"
         android:id="@+id/tvline"
-        android:background="#000000"
-        android:layout_marginTop="370dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvflag"
+        android:layout_alignStart="@+id/tvflag"
+        android:layout_alignEnd="@+id/tvcode"
+        android:layout_marginTop="10dp"
+        android:background="#000000" />
+
     <EditText
+        android:id="@+id/etPhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="335dp"
+        android:layout_alignTop="@+id/tvcode"
+        android:layout_alignBottom="@+id/tvline"
+        android:inputType="phone"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-8dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="200dp" />
+        android:layout_toEndOf="@+id/tvcode"
+        android:backgroundTint="@color/black" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginStart="200dp"
-        android:padding="75dp"
-        android:layout_marginEnd="20dp"
-        android:background="#000000"
-        android:layout_marginTop="370dp"/>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="670dp"
-        android:layout_marginStart="350dp"
-        android:background="@drawable/circle"
-        android:layout_height="wrap_content"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_right_arrow"
-        android:layout_marginStart="365dp"
-        android:layout_marginTop="685dp"/>
-
+        android:id="@+id/ivNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/phone_next_white" />
 
 
 </RelativeLayout>

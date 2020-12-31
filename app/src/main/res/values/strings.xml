@@ -78,6 +78,8 @@
     <string name="upgrade">Upgrade</string>
     <string name="preferred_members_can_vies_all_their_like_at_once">Preferred members can vies all their like at once</string>
     <string name="up_next">Up next</string>
+
+    <string name="what_s_your">What\'s your phone</string>
     <string name="catch_their_eye_by_sending_a_rose">Catch their eye by sending a Rose</string>
     <string name="roses_are_always_seen_first_and_twice_as_likely_to_lead_to_a_date_a_purchased_rose_never_expires">Roses are always seen first and twice as likely to lead to a date. A purchased Rose never expires</string>
     <string name="_1">1</string>
@@ -88,6 +90,7 @@
     <string name="roses">Roses</string>
     <string name="_2650_00_220_83_each">₹2650.00 (₹220.83/each)</string>
     <string name="new_matches_will_appear_here">New matches will appear here.</string>
+
 
 
 </resources>
