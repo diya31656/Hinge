@@ -71,6 +71,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
+                            android:id="@+id/ivLike1"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -108,7 +109,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/tvTextContentLike1"
+                            android:id="@+id/ivLike2"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -150,7 +151,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/ivImagelike2"
+                            android:id="@+id/ivLike3"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -336,7 +337,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/ivImagelike3"
+                            android:id="@+id/ivLike4"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -374,7 +375,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/tvTextContentLike2"
+                            android:id="@+id/ivLike5"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -414,7 +415,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/ivImagelike4"
+                            android:id="@+id/ivLike6"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -452,7 +453,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/tvTextContentLike3"
+                            android:id="@+id/ivLike7"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -492,7 +493,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/ivImagelike5"
+                            android:id="@+id/ivLike8"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -533,7 +534,7 @@
                         app:layout_constraintEnd_toEndOf="parent">
 
                         <ImageView
-                            android:id="@+id/ivImagelike6"
+                            android:id="@+id/ivLike9"
                             style="@style/discover_elements_like_image_style"
                             android:src="@drawable/ic_like" />
                     </androidx.cardview.widget.CardView>
@@ -618,6 +619,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
+            android:id="@+id/ivDecline1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
