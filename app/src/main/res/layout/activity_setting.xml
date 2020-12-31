@@ -293,7 +293,7 @@
     <Button
         android:layout_width="42dp"
         android:layout_height="32dp"
-        android:background="@drawable/ic_noun_heart_827144"
+        android:background="@drawable/ic_like_bottom_action"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
@@ -305,7 +305,7 @@
     <Button
         android:layout_width="42dp"
         android:layout_height="32dp"
-        android:background="@drawable/ic_noun_star_871283"
+        android:background="@drawable/ic_star_bottom_action"
         android:paddingTop="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -317,7 +317,7 @@
     <Button
         android:layout_width="42dp"
         android:layout_height="32dp"
-        android:background="@drawable/ic_noun_comment_205148"
+        android:background="@drawable/ic_message_bottom_action"
         android:paddingTop="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -329,7 +329,7 @@
     <Button
         android:layout_width="30dp"
         android:layout_height="20dp"
-        android:background="@drawable/ic_user__1_"
+        android:background="@drawable/ic_setting_bottom_action"
         android:paddingTop="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -341,7 +341,7 @@
     <Button
         android:layout_width="42dp"
         android:layout_height="20dp"
-        android:background="@drawable/ic_h"
+        android:background="@drawable/hinge_logo_grey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
