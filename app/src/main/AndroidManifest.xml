@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
-        <activity android:name=".name_screen"></activity>
+        <activity android:name=".email_screen"></activity>
+        <activity android:name=".name_screen" />
         <activity android:name=".verified" />
         <activity android:name=".otp_screen" />
         <activity android:name=".phone_num" />

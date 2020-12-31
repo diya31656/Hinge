@@ -20,16 +20,26 @@
         android:layout_marginTop="80dp" />
 
     <TextView
-        android:id="@+id/tvphone"
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:textSize="40sp"
-        android:text="What's your phone number?"
-        android:layout_marginTop="150dp"
-        android:layout_marginStart="30dp"
+        android:text="What,s your"
+        android:textSize="30sp"
+        android:textColor="#000000"
         android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="phone number?"
+        android:layout_below="@id/textView"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="30dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -37,7 +47,7 @@
         android:fontFamily="sans-serif"
         android:text="Hinge will send you a text with a verification code. Message and data rates may apply."
         android:textSize="18sp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="380dp"
         android:layout_marginStart="30dp"/>
     <ImageView
         android:layout_width="wrap_content"
