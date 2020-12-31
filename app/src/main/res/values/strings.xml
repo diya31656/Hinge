@@ -60,6 +60,7 @@
     <string name="my_cool_pic_with_my_cool_phone">My cool pic with my cool phone.</string>
     <string name="my_ex_build_brawl_stars">My ex build Brawl Stars.</string>
     <string name="the_way_to_win_me_over_is">The way to win me over is</string>
+
     <string name="standouts">Standouts</string>
     <string name="roses_1">Roses (1)</string>
     <string name="outstanding_prompts_from_people_most_your_type">Outstanding prompts from people most your type.</string>
@@ -70,6 +71,14 @@
     <string name="you_v_seen_everyone_who_fits">You\'v seen everyone who fits</string>
     <string name="your_preferences_but_check_back">your preferences, but check back</string>
     <string name="soon_for_new_people">soon for new people.</string>
+
+    <string name="like_you">Like You</string>
+    <string name="new_likes_will_appear_here">New Likes Will appear here.</string>
+    <string name="for_more_likes_now">for more likes now</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="preferred_members_can_vies_all_their_like_at_once">Preferred members can vies all their like at once</string>
+    <string name="up_next">Up next</string>
+
 
 
 </resources>

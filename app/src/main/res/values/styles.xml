@@ -46,6 +46,11 @@
         <item name="android:layout_height">@dimen/actionbar_cardview_height</item>
         <item name="android:elevation">@dimen/actionbar_card_elevation</item>
     </style>
+    <style name="Like_you_cardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:elevation">@dimen/actionbar_card_elevation</item>
+    </style>
 
     <style name="discover_title_textStyle">
         <item name="android:layout_width">wrap_content</item>
@@ -65,6 +70,7 @@
         <item name="android:layout_marginEnd">@dimen/overflow_icon_margin</item>
         <item name="android:layout_marginBottom">@dimen/overflow_icon_margin</item>
     </style>
+
 
     <style name="left_arrow">
         <item name="android:layout_width">wrap_content</item>
