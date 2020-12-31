@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Hinge</string>
     <string name="designed_to_be_deleted">Designed to be deleted.</string>
     <string name="or_continue_with_phone_number">Or continue with phone number</string>
@@ -18,6 +18,26 @@
     <string name="learn_how_we_process">Learn how we process</string>
     <string name="by_signing_up_for_hinge_you_agree_to_our">By signing up for Hinge, you agree to our</string>
     <string name="hinge_full_logo">Hinge full logo</string>
+    <string name="_0_complete">0% Complete</string>
+    <string name="edit">Edit</string>
+    <string name="i_m_interested_in" tools:ignore="StringEscaping">I'm interested in</string>
+    <string name="my_location">My location</string>
+    <string name="age_range">Age range</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="maximum_distance">Maximum distance</string>
+    <string name="basic_preference">Basic Preferences</string>
+    <string name="member_preferences">Member Preferences</string>
+    <string name="women">Women</string>
+    <string name="place_name">Place Name</string>
+    <string name="open_to_all">Open to all</string>
+    <string name="religion">Religion</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="preferred_preferences">Preferred Preferences</string>
+    <string name="height">Height</string>
+    <string name="politics">Politics</string>
+    <string name="smoking">Smoking</string>
+    <string name="drinking">Drinking</string>
+    <string name="education">Education</string>
     <string name="when_i_see_an_android_developer">When I see an Android developer</string>
     <string name="by_showing_me_the_code">By showing me the code.</string>
     <string name="looking_for_an_android_developer">Looking for an android developer</string>
@@ -41,6 +61,7 @@
     <string name="my_cool_pic_with_my_cool_phone">My cool pic with my cool phone.</string>
     <string name="my_ex_build_brawl_stars">My ex build Brawl Stars.</string>
     <string name="the_way_to_win_me_over_is">The way to win me over is</string>
+
 
 
 </resources>

@@ -10,15 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
 
+
         <activity android:name=".DiscoverActivity" />
 
 
 
-        <activity android:name=".SettingActivity"></activity>
-        <activity android:name=".verified"></activity>
+        <activity android:name=".Prefernce_Activity"></activity>
+        <activity android:name=".Boost" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".verified" />
+        <activity android:name=".phone_num" />
 
+
+
+        <activity android:name=".email_screen"></activity>
+        <activity android:name=".name_screen" />
+      
         <activity android:name=".otp_screen" />
         <activity android:name=".phone_num" />
+
 
 
         <activity android:name=".MainActivity">
