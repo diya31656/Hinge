@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F1F1"
+    android:background="@color/activity_background_colour"
     tools:context=".DiscoverActivity">
 
     <androidx.cardview.widget.CardView
@@ -555,7 +555,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/ivhingeDiscoverScreen"
+        android:id="@+id/ivhingeStandoutScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_hinge_logo_white"
@@ -573,7 +573,7 @@
         app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
         app:layout_constraintEnd_toStartOf="@+id/ivHeartDiscoverScreen"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ivhingeDiscoverScreen"
+        app:layout_constraintStart_toEndOf="@+id/ivhingeStandoutScreen"
         app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
 
     <ImageView

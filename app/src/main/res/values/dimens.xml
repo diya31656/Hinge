@@ -33,7 +33,15 @@
     <dimen name="tv_information_drawable_style">13dp</dimen>
     <dimen name="discover_drawable_padding">10dp</dimen>
     <dimen name="decline_button_padding">20dp</dimen>
-
+    <dimen name="standout_title_Textsize">30sp</dimen>
+    <dimen name="standout_title_marginTop">53dp</dimen>
+    <dimen name="standout_title_marginStart">30dp</dimen>
+    <dimen name="roses_margin_end">20dp</dimen>
+    <dimen name="standout_content_textmargin">40dp</dimen>
+    <dimen name="learn_more_margin_start">5dp</dimen>
+    <dimen name="standout_card_width">310dp</dimen>
+    <dimen name="standout_card_height">500dp</dimen>
+    <dimen name="standout_card_marginTop">35dp</dimen>
 
 
 </resources>
