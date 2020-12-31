@@ -88,6 +88,18 @@
     <string name="roses">Roses</string>
     <string name="_2650_00_220_83_each">₹2650.00 (₹220.83/each)</string>
     <string name="new_matches_will_appear_here">New matches will appear here.</string>
+    <string name="_3">3</string>
+    <string name="month">months</string>
+    <string name="preferred_members_get_twice_as_many_dates_here_s_why">Preferred Members get twice as many dates. Here\'s Why...</string>
+    <string name="_4950_00_825_00_month">₹4950.00 (₹825.00/month)</string>
+    <string name="_3300_00_1100_month">₹3300.00 (₹1100/month)</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="_1650_00">₹1650.00</string>
+    <string name="set_advanced_preferences">Set advanced preferences.</string>
+    <string name="see_everyone_who_likes_you">See everyone who likes you.</string>
+    <string name="send_unlimited_likes">Send unlimited likes.</string>
+    <string name="all_in_one_organised_place">All in one organised place.</string>
+    <string name="education_family_plans_politics_and_vices">Education, family plans, politics and vices</string>
 
 
 </resources>

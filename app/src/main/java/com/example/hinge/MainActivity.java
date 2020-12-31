@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         initviews();
 
-        Intent intent = new Intent(MainActivity.this,Matches_Activity.class);
+        Intent intent = new Intent(MainActivity.this,Learn_more_Activity.class);
         startActivity(intent);
 
 
