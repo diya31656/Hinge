@@ -278,7 +278,7 @@
                     <TextView
                         android:id="@+id/tvTitleImage23"
                         style="@style/i_intrested"
-                        android:text="@string/ethencity"
+                        android:text="@string/ethnicity"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -317,7 +317,7 @@
                 android:id="@+id/tvTitleImage25"
                 style="@style/basic_preference"
                 android:layout_marginTop="4dp"
-                android:text="@string/preferred_preference" />
+                android:text="@string/preferred_preferences" />
 
             <View
                 android:id="@+id/lin9"

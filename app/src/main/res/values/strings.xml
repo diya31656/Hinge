@@ -27,5 +27,16 @@
     <string name="maximum_distance">Maximum distance</string>
     <string name="basic_preference">Basic Preferences</string>
     <string name="member_preferences">Member Preferences</string>
+    <string name="women">Women</string>
+    <string name="place_name">Place Name</string>
+    <string name="open_to_all">Open to all</string>
+    <string name="religion">Religion</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="preferred_preferences">Preferred Preferences</string>
+    <string name="height">Height</string>
+    <string name="politics">Politics</string>
+    <string name="smoking">Smoking</string>
+    <string name="drinking">Drinking</string>
+    <string name="education">Education</string>
 
 </resources>
