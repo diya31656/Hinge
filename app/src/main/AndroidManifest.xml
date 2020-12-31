@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
-        <activity android:name=".Like_you_Activity"></activity>
+        <activity android:name=".Roses_activity"></activity>
+        <activity android:name=".Like_you_Activity" />
         <activity android:name=".DiscoverActivity" />
         <activity android:name=".Prefernce_Activity" />
         <activity android:name=".Boost" />
@@ -19,7 +20,7 @@
         <activity android:name=".email_screen" />
         <activity android:name=".name_screen" />
         <activity android:name=".otp_screen" />
-        <activity android:name=".phone_num" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
