@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_colour"
+    tools:context=".StandoutActivity">
+
+    <TextView
+        android:id="@+id/textView12"
+        style="@style/standout_title"
+        android:text="@string/standouts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        style="@style/roses_card_view"
+        app:cardCornerRadius="@dimen/btn_facebook_radius"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView12">
+
+        <Button
+            style="@style/rose_btn_style"
+            android:background="@color/rose_background"
+            android:drawableStart="@drawable/ic_rose"
+            android:text="@string/roses_1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView18"
+        style="@style/standout_content"
+        android:layout_marginTop="@dimen/standout_content_textmargin"
+        android:fontFamily="@font/modern_era_regular"
+        android:text="@string/outstanding_prompts_from_people_most_your_type"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        style="@style/standout_content"
+        android:fontFamily="@font/modern_era_regular"
+        android:text="@string/refreshed_daily"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+    <TextView
+        android:id="@+id/tvLearnMore"
+        style="@style/standout_content"
+        android:layout_marginStart="@dimen/learn_more_margin_start"
+        android:fontFamily="@font/modern_era_bold"
+        android:text="@string/learn_more"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/standout_card_width"
+        android:layout_height="@dimen/standout_card_height"
+        android:layout_marginTop="@dimen/standout_card_marginTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity=""
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/standout_content_bold"
+                android:text="@string/fresh_out_of_srandouts"
+                app:layout_constraintBottom_toTopOf="@+id/textView22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/standout_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/you_v_seen_everyone_who_fits"
+                app:layout_constraintBottom_toTopOf="@+id/textView23"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView23"
+                style="@style/standout_content"
+                android:text="@string/your_preferences_but_check_back"
+                app:layout_constraintBottom_toTopOf="@+id/textView24"
+                app:layout_constraintEnd_toEndOf="@+id/textView22"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView24"
+                style="@style/standout_content"
+                android:text="@string/soon_for_new_people"
+                app:layout_constraintBottom_toTopOf="@+id/cardView3"
+                app:layout_constraintEnd_toEndOf="@+id/textView23"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                style="@style/viewFacebookSignUP"
+                android:layout_marginTop="40dp"
+                android:background="@color/faceBook_btn_background"
+                app:cardCornerRadius="@dimen/btn_facebook_radius"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+                <Button
+                    style="@style/btn_facebook_style"
+                    android:padding="0dp"
+                    android:text="Widen Preferences"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:id="@+id/bottomActionbarDiscover"
+        style="@style/btoom_action_bar_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivhingeStandoutScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_hinge_logo_greyy"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivStarDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_bottom_action_white"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivhingeStandoutScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivHeartDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivMessagetDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_message_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivSettingsDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivSettingsDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_setting_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+</androidx.constraintlayout.widget.ConstraintLayout>

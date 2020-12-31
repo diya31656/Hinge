@@ -1,5 +1,6 @@
 package com.example.hinge;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -58,6 +59,7 @@ public class DiscoverActivity extends AppCompatActivity {
     ImageView ivmLike7;
     ImageView ivmLike8;
     ImageView ivmLike9;
+    ImageView ivmStarDiscoverScreen;
 
     private void initView() {
         tvmName = findViewById(R.id.tvName_discover);
@@ -97,6 +99,7 @@ public class DiscoverActivity extends AppCompatActivity {
         ivmLike7 = findViewById(R.id.ivLike7);
         ivmLike8 = findViewById(R.id.ivLike8);
         ivmLike9 = findViewById(R.id.ivLike9);
+        ivmStarDiscoverScreen = findViewById(R.id.ivStarDiscoverScreen);
 
 
         settingClickListeners();
@@ -163,6 +166,12 @@ public class DiscoverActivity extends AppCompatActivity {
                 changePersonInScreen();
             }
         });
+        ivmStarDiscoverScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(StandoutActivity.class);
+            }
+        });
 
     }
 
@@ -216,5 +225,11 @@ public class DiscoverActivity extends AppCompatActivity {
         tvmEducation.setText(match.getEducation());
         tvmReligion.setText(match.getReligion());
         tvmCountry.setText(match.getCountry());
+    }
+
+    private void activityTriversal(Class classname) {
+        Intent intent = new Intent(DiscoverActivity.this, classname);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
     }
 }

@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Hinge</string>
     <string name="designed_to_be_deleted">Designed to be deleted.</string>
     <string name="or_continue_with_phone_number">Or continue with phone number</string>
@@ -60,8 +60,16 @@
     <string name="my_cool_pic_with_my_cool_phone">My cool pic with my cool phone.</string>
     <string name="my_ex_build_brawl_stars">My ex build Brawl Stars.</string>
     <string name="the_way_to_win_me_over_is">The way to win me over is</string>
-
-
+    <string name="standouts">Standouts</string>
+    <string name="roses_1">Roses (1)</string>
+    <string name="outstanding_prompts_from_people_most_your_type">Outstanding prompts from people most your type.</string>
+    <string name="learn_more">Learn more.</string>
+    <string name="refreshed_daily">Refreshed daily.</string>
+    <string name="fresh_out_of_srandouts">Fresh out of Srandouts!</string>
+    <string name="standout_content">You\'v seen everyone who fits \nyour preferences, but check back\nsoon for new people.</string>
+    <string name="you_v_seen_everyone_who_fits">You\'v seen everyone who fits</string>
+    <string name="your_preferences_but_check_back">your preferences, but check back</string>
+    <string name="soon_for_new_people">soon for new people.</string>
 
 
 </resources>
