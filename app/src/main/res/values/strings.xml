@@ -20,7 +20,7 @@
     <string name="hinge_full_logo">Hinge full logo</string>
     <string name="_0_complete">0% Complete</string>
     <string name="edit">Edit</string>
-    <string name="i_m_interested_in" tools:ignore="StringEscaping">I'm interested in</string>
+    <string name="i_m_interested_in">I\'m interested in</string>
     <string name="my_location">My location</string>
     <string name="age_range">Age range</string>
     <string name="ethnicity">Ethnicity</string>
@@ -31,7 +31,6 @@
     <string name="place_name">Place Name</string>
     <string name="open_to_all">Open to all</string>
     <string name="religion">Religion</string>
-    <string name="ethnicity">Ethnicity</string>
     <string name="preferred_preferences">Preferred Preferences</string>
     <string name="height">Height</string>
     <string name="politics">Politics</string>
