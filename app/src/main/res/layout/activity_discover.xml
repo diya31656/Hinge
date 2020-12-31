@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".DiscoverActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/actionbar_cardView_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvName_discover"
+            style="@style/discover_title_textStyle"
+            android:text="@string/lisa"
+            android:textColor="@color/black" />
+
+        <ImageView
+            style="@style/overflow_icon_style"
+            android:src="@drawable/ic_discover_overflow" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionbarDiscover"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImagecard1"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleImage1"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/looking_for_an_android_developer"
+                        app:layout_constraintBottom_toTopOf="@+id/ivUserImage1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivUserImage1"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisa"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="@+id/ivUserImage1"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/discover_elements_constraint_forTextonly">
+
+                    <TextView
+                        android:id="@+id/tvTextContentTitle1"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/the_way_to_win_me_over_is"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTextContent1"
+                        style="@style/discover_elements_content_text_style"
+                        android:text="@string/by_showing_me_the_code"
+                        app:layout_constraintBottom_toTopOf="@id/likeBackground"
+                        app:layout_constraintStart_toStartOf="@+id/tvTextContentTitle1"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTextContentTitle1" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/likeBackground"
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/tvTextContentLike1"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImagecard2"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTitleImage2"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/when_i_see_an_android_developer"
+                        app:layout_constraintBottom_toTopOf="@+id/ivUserImage2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivUserImage2"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisatwo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/ivImagelike2"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserDetail"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:id="@+id/HorizontalScrollview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvAge"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_age"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/_23" />
+
+                            <TextView
+                                android:id="@+id/tvGender"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_gender"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/woman" />
+
+                            <TextView
+                                android:id="@+id/tvHeight"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_height__1_"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/_5_6" />
+
+                            <TextView
+                                android:id="@+id/tvLocation"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_location"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/buriram" />
+
+                            <TextView
+                                android:id="@+id/tvEthanicity"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_ethnicity"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/south_asian" />
+
+                            <TextView
+                                android:id="@+id/tvChildern"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_kids"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/don_t_want_children" />
+
+                            <TextView
+                                android:id="@+id/tvDrinking"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_drinking"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/no" />
+
+                            <TextView
+                                android:id="@+id/tvSmoking"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_smoking"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/no" />
+
+                            <TextView
+                                android:id="@+id/tvMarijuana"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_marijuana"
+                                android:drawableEnd="@drawable/line_vertical"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/no" />
+
+                            <TextView
+                                android:id="@+id/tvDrugs"
+                                style="@style/discover_elements_title_textview_style"
+                                android:drawableStart="@drawable/ic_drugs"
+                                android:drawablePadding="@dimen/tv_information_drawable_style"
+                                android:gravity="center"
+                                android:text="@string/no" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <ImageView style="@style/discover_Horizondal_line" />
+
+                    <TextView
+                        android:id="@+id/tvEducation"
+                        style="@style/discover_userInformation_textView_style2"
+                        android:drawableStart="@drawable/ic_education"
+                        android:text="@string/praphamontree" />
+
+                    <ImageView style="@style/discover_Horizondal_line" />
+
+                    <TextView
+                        android:id="@+id/tvReligion"
+                        style="@style/discover_userInformation_textView_style2"
+                        android:drawableStart="@drawable/ic_religion"
+                        android:text="@string/buddhist" />
+
+                    <ImageView style="@style/discover_Horizondal_line" />
+
+                    <TextView
+                        android:id="@+id/tvCountry"
+                        style="@style/discover_userInformation_textView_style2"
+                        android:drawableStart="@drawable/ic_hometown"
+                        android:text="@string/thailand" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImagecard3"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleImage3"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/when_i_know_you_got_an_iphone"
+                        app:layout_constraintBottom_toTopOf="@+id/ivUserImage3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivUserImage3"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisa_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/ivImagelike3"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/discover_elements_constraint_forTextonly">
+
+                    <TextView
+                        android:id="@+id/tvTextContentTitle2"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/i_m_looking_for"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTextContent2"
+                        style="@style/discover_elements_content_text_style"
+                        android:text="@string/a_cool_android_developer_who_can_implement_mvvm_architecture_flawlessly"
+                        app:layout_constraintBottom_toTopOf="@id/likeBackground2"
+                        app:layout_constraintStart_toStartOf="@+id/tvTextContentTitle2"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTextContentTitle2" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/likeBackground2"
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/tvTextContentLike2"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImagecard4"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleImage4"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/we_will_install_our_app_in_here"
+                        app:layout_constraintBottom_toTopOf="@+id/ivUserImage4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivUserImage4"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisa_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/ivImagelike4"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout style="@style/discover_elements_constraint_forTextonly">
+
+                    <TextView
+                        android:id="@+id/tvTextContentTitle3"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/i_ll_fall_for_you_if"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTextContent3"
+                        style="@style/discover_elements_content_text_style"
+                        android:text="@string/you_complete_6_months_of_masai_school_with_100_attendance_and_assignment_submission"
+                        app:layout_constraintBottom_toTopOf="@id/likeBackground3"
+                        app:layout_constraintStart_toStartOf="@+id/tvTextContentTitle3"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTextContentTitle3" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/likeBackground3"
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/tvTextContentLike3"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImagecard5"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleImage5"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/my_cool_pic_with_my_cool_phone"
+                        app:layout_constraintBottom_toTopOf="@+id/ivUserImage5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivUserImage5"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisa_5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/ivImagelike5"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvUserImagecard6"
+                style="@style/discover_elements_cardView_style"
+                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleImage6"
+                        style="@style/discover_elements_title_textview_style"
+                        android:text="@string/my_ex_build_brawl_stars"
+                        app:layout_constraintBottom_toTopOf="@+id/ivUserImage6"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivUserImage6"
+                        style="@style/discover_elements_imageViewStyle"
+                        android:src="@drawable/lisa_6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/discover_elements_like_background"
+                        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/ivImagelike6"
+                            style="@style/discover_elements_like_image_style"
+                            android:src="@drawable/ic_like" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/bottomActionbarDiscover"
+        style="@style/btoom_action_bar_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivhingeDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_hinge_logo_white"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivStarDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivhingeDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivHeartDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivMessagetDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_message_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivSettingsDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivSettingsDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_setting_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/like_button_margin"
+        android:background="@color/text_white"
+        app:cardCornerRadius="@dimen/discover_element_like_background_radiaus"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionbarDiscover"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/decline_button_padding"
+            android:src="@drawable/ic_decline" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
