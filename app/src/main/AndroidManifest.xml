@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
+
+        <activity android:name=".StandoutActivity"></activity>
         <activity android:name=".Like_you_Activity"></activity>
         <activity android:name=".DiscoverActivity" />
         <activity android:name=".Prefernce_Activity" />

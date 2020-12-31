@@ -214,5 +214,46 @@
         <item name="android:elevation">@dimen/actionbar_card_elevation</item>
     </style>
 
+    <style name="standout_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/standout_title_Textsize</item>
+        <item name="android:layout_marginTop">@dimen/standout_title_marginTop</item>
+        <item name="android:layout_marginStart">@dimen/standout_title_marginStart</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="roses_card_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/roses_margin_end</item>
+    </style>
+
+    <style name="rose_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/discover_constraint_textonly_padding</item>
+        <item name="android:paddingStart">@dimen/decline_button_padding</item>
+        <item name="android:paddingEnd">@dimen/decline_button_padding</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="standout_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="standout_content_bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
 </resources>
