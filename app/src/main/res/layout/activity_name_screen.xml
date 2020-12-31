@@ -49,7 +49,7 @@
         android:textSize="30sp"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/tiempos_headline_bold"
         android:layout_marginTop="150dp"
         android:layout_marginStart="30dp" />
 
@@ -60,6 +60,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#000000"
+        android:fontFamily="@font/tiempos_headline_bold"
         android:layout_below="@id/textView"
         android:layout_marginStart="30dp" />
 
@@ -69,6 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="260dp"
         android:textSize="30sp"
+        android:fontFamily="@font/modern_era_regular"
+        android:backgroundTint="@color/white"
         android:layout_marginStart="30dp"
         android:hint="First name" />
 
@@ -85,6 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="330dp"
         android:textSize="30sp"
+        android:fontFamily="@font/modern_era_regular"
+        android:backgroundTint="@color/white"
         android:layout_marginStart="30dp"
         android:hint="Last name" />
 
@@ -99,6 +104,7 @@
         android:layout_height="wrap_content"
         android:text="Last name is optional, and only"
         android:textSize="18sp"
+        android:fontFamily="@font/modern_era_regular"
         android:id="@+id/tvtext"
         android:layout_marginTop="400dp"
         android:layout_marginStart="30dp"/>
@@ -107,6 +113,7 @@
         android:layout_height="wrap_content"
         android:text="shared with matches"
         android:textSize="18sp"
+        android:fontFamily="@font/modern_era_regular"
         android:layout_marginStart="30dp"
         android:layout_below="@id/tvtext"/>
     <TextView
@@ -116,6 +123,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="#763568"
+        android:fontFamily="@font/modern_era_regular"
         android:layout_marginTop="420dp"
         android:layout_marginStart="210dp"/>
 
@@ -138,6 +146,7 @@
         android:layout_height="wrap_content"
         android:text="visible on profile"
         android:layout_marginTop="470dp"
+        android:fontFamily="@font/modern_era_regular"
         android:layout_marginStart="80dp"
         android:textStyle="normal"
         android:textColor="#696969"
