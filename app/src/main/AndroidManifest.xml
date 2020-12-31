@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
 
-        <activity android:name=".DiscoverActivity"></activity>
+        <activity android:name=".DiscoverActivity" />
 
 
 

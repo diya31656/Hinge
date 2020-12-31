@@ -3,6 +3,7 @@ package com.example.hinge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class name_screen extends AppCompatActivity {
 
