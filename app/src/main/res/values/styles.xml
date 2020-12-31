@@ -1,5 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="viewFacebookSignUP">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">42dp</item>
+        <item name="android:layout_marginEnd">42dp</item>
+        <item name="android:layout_marginBottom">21dp</item>
+        <item name="android:background">@color/faceBook_btn_background</item>
+    </style>
+
+    <style name="btn_facebook_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_facebook_height</item>
+        <item name="android:background">@color/faceBook_btn_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/btn_facebook_padding</item>
+        <item name="android:paddingRight">@dimen/btn_facebook_padding</item>
+        <item name="android:fontFamily">@font/modern_era_extra_bold</item>
+    </style>
+
+    <style name="logo_style">
+        <item name="android:layout_width">@dimen/hinge_full_logo_width</item>
+        <item name="android:layout_height">@dimen/hinge_full_logo_height</item>
+        <item name="android:layout_marginTop">@dimen/hinge_full_logo_top_margin</item>
+    </style>
+
+    <style name="second_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/second_title_text_szie</item>
+        <item name="android:fontFamily">@font/modern_era_medium</item>
+    </style>
+
+    <style name="policy_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:fontFamily">@font/modern_era_regular</item>
+    </style>
+
+    <style name="actionbar_cardView_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_cardview_height</item>
+        <item name="android:elevation">@dimen/actionbar_card_elevation</item>
+    </style>
+    <style name="Like_you_cardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:elevation">@dimen/actionbar_card_elevation</item>
+    </style>
+
+    <style name="discover_title_textStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center|start</item>
+        <item name="android:layout_marginStart">@dimen/tv_title_name_marginStart</item>
+
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textSize">@dimen/tv_title_name_textSize</item>
+    </style>
+
+    <style name="overflow_icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center|end</item>
+        <item name="android:layout_marginTop">@dimen/overflow_icon_margin</item>
+        <item name="android:layout_marginEnd">@dimen/overflow_icon_margin</item>
+        <item name="android:layout_marginBottom">@dimen/overflow_icon_margin</item>
+    </style>
+
+
+    <style name="left_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center|start</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">@dimen/overflow_icon_margin</item>
+        <item name="android:layout_marginEnd">@dimen/overflow_icon_margin</item>
+        <item name="android:layout_marginBottom">@dimen/overflow_icon_margin</item>
+    </style>
+
+
+    <style name="discover_elements_cardView_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_cardView_margin</item>
+        <item name="android:layout_marginTop">@dimen/discover_elements_cardView_marginTop</item>
+    </style>
+    <style name="Preferd_preference">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_cardView_margin</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+
+    <style name="discover_elements_title_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="basic_preference">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/line</item>
+    </style>
+    <style name="i_intrested">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="women">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/line</item>
+    </style>
+
+
+    <style name="discover_elements_imageViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/discover_elements_imageviewheighht</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="elements_1_preference">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="discover_elements_like_background">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_likeBackground_margin</item>
+        <item name="android:background">@color/text_white</item>
+    </style>
+
+    <style name="discover_elements_like_image_style">
+        <item name="android:layout_width">@dimen/like_button_height_width</item>
+        <item name="android:layout_height">@dimen/like_button_height_width</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/like_button_margin</item>
+    </style>
+
+    <style name="discover_elements_constraint_forTextonly">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/discover_elements_likeBackground_margin</item>
+        <item name="android:paddingStart">@dimen/discover_constraint_textonly_padding</item>
+        <item name="android:paddingTop">@dimen/discover_constraintLayout_padding_Top</item>
+    </style>
+
+    <style name="Member_preference">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/discover_elements_likeBackground_margin</item>
+        <item name="android:paddingStart">@dimen/discover_constraint_textonly_padding</item>
+        <item name="android:paddingTop">@dimen/discover_constraintLayout_padding_Top</item>
+    </style>
+
+    <style name="discover_elements_content_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/tiempos_headline_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/discover_element_content_textsize</item>
+    </style>
+
+    <style name="discover_Horizondal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/discover_elements_title_textview_margin
+        </item>
+        <item name="android:layout_marginEnd">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:src">@drawable/line_horizondal</item>
+    </style>
+
+    <style name="discover_userInformation_textView_style2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/discover_drawable_padding</item>
+    </style>
+
+    <style name="btoom_action_bar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@color/bottom_action_background</item>
+    </style>
+
+    <style name="Prefernce_cardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_cardview_height</item>
+        <item name="android:elevation">@dimen/actionbar_card_elevation</item>
+    </style>
+
+    <style name="standout_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/standout_title_Textsize</item>
+        <item name="android:layout_marginTop">@dimen/standout_title_marginTop</item>
+        <item name="android:layout_marginStart">@dimen/standout_title_marginStart</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="roses_card_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/roses_margin_end</item>
+    </style>
+
+    <style name="rose_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/discover_constraint_textonly_padding</item>
+        <item name="android:paddingStart">@dimen/decline_button_padding</item>
+        <item name="android:paddingEnd">@dimen/decline_button_padding</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="standout_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="standout_content_bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
 </resources>
