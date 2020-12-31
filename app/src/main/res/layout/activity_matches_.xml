@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Matches_Activity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/Like_you_cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/tvName_discover"
+        style="@style/discover_title_textStyle"
+        android:layout_marginTop="20dp"
+        android:text="Matches"
+        android:textSize="27dp"
+        android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/empty_matches"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.17" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/new_matches_will_appear_here"
+        android:textColor="@color/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <View
+        android:id="@+id/bottomActionbarDiscover"
+        style="@style/btoom_action_bar_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivhingeDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hinge_black"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivStarDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivhingeDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivHeartDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivMessagetDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/comment_white"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toStartOf="@+id/ivSettingsDiscoverScreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+    <ImageView
+        android:id="@+id/ivSettingsDiscoverScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_setting_bottom_action"
+        app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

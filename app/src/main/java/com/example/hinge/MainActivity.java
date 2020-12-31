@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         initviews();
 
-        Intent intent = new Intent(MainActivity.this,Roses_activity.class);
+        Intent intent = new Intent(MainActivity.this,Matches_Activity.class);
         startActivity(intent);
 
 
