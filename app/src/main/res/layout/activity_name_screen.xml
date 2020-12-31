@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".name_screen">
     <ImageView
+        android:id="@+id/ivCircle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/circle1_bg"
-        android:layout_marginTop="65dp"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="55dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_text"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="80dp"/>
-  
+        android:layout_alignStart="@+id/ivCircle"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_alignEnd="@+id/ivCircle"
+        android:layout_alignBottom="@+id/ivCircle"
+        android:padding="10dp"
+        android:src="@drawable/ic_text" />
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/ivCircle"
+        android:background="@drawable/circle_grey" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/circle_grey"
-        android:layout_marginTop="90dp"
-        android:layout_marginStart="120dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/circle_grey"
-        android:layout_marginTop="90dp"
-        android:layout_marginStart="150dp"/>
+        android:layout_alignTop="@+id/dot"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/dot"
+        android:background="@drawable/circle_grey" />
 
     <TextView
         android:id="@+id/textView"
@@ -40,9 +49,10 @@
         android:textSize="30sp"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/tiempos_headline_bold"
         android:layout_marginTop="150dp"
-        android:layout_marginStart="30dp"/>
+        android:layout_marginStart="30dp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,28 +60,39 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#000000"
+        android:fontFamily="@font/tiempos_headline_bold"
         android:layout_below="@id/textView"
-        android:layout_marginStart="30dp"/>
-    <TextView
+        android:layout_marginStart="30dp" />
+
+    <EditText
+        android:id="@+id/etFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First name"
+        android:layout_marginTop="260dp"
         android:textSize="30sp"
+        android:fontFamily="@font/modern_era_regular"
+        android:backgroundTint="@color/white"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="260dp"/>
+        android:hint="First name" />
+
     <View
         android:layout_width="350dp"
         android:layout_height="3dp"
         android:background="#B0B0B0"
         android:layout_marginTop="310dp"
-        android:layout_marginStart="30dp"/>
-    <TextView
+        android:layout_marginStart="30dp" />
+
+    <EditText
+        android:id="@+id/etLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Last name"
+        android:layout_marginTop="330dp"
         android:textSize="30sp"
+        android:fontFamily="@font/modern_era_regular"
+        android:backgroundTint="@color/white"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="330dp"/>
+        android:hint="Last name" />
+
     <View
         android:layout_width="350dp"
         android:layout_height="3dp"
@@ -83,6 +104,7 @@
         android:layout_height="wrap_content"
         android:text="Last name is optional, and only"
         android:textSize="18sp"
+        android:fontFamily="@font/modern_era_regular"
         android:id="@+id/tvtext"
         android:layout_marginTop="400dp"
         android:layout_marginStart="30dp"/>
@@ -91,6 +113,7 @@
         android:layout_height="wrap_content"
         android:text="shared with matches"
         android:textSize="18sp"
+        android:fontFamily="@font/modern_era_regular"
         android:layout_marginStart="30dp"
         android:layout_below="@id/tvtext"/>
     <TextView
@@ -100,6 +123,7 @@
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="#763568"
+        android:fontFamily="@font/modern_era_regular"
         android:layout_marginTop="420dp"
         android:layout_marginStart="210dp"/>
 
@@ -116,27 +140,25 @@
         android:src="@drawable/ic_lock"
         android:layout_marginStart="38dp"
         android:layout_marginTop="475dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="visible on profile"
         android:layout_marginTop="470dp"
+        android:fontFamily="@font/modern_era_regular"
         android:layout_marginStart="80dp"
         android:textStyle="normal"
         android:textColor="#696969"
         android:textSize="20sp"/>
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:id="@+id/tvcircle"
-        android:layout_marginTop="670dp"
-        android:layout_marginStart="350dp"
-        android:background="@drawable/circle"
-        android:layout_height="wrap_content"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_right_arrow"
-        android:layout_marginStart="365dp"
-        android:layout_marginTop="685dp"/>
+        android:id="@+id/ivNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/phone_next_white" />
 
 </RelativeLayout>
