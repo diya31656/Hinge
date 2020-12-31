@@ -3,6 +3,8 @@ package com.example.hinge;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,10 +16,6 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ScalableVideoView mBackgroundVideo;
-    private TextView mTvTermsofService;
-    private TextView mTvPrivacyPolicy;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,17 +23,43 @@ public class MainActivity extends AppCompatActivity {
 
         initviews();
 
-        mTvTermsofService.setOnClickListener(v -> urlOpner("https://hinge.co/terms.html"));
-        mTvPrivacyPolicy.setOnClickListener(v -> urlOpner("https://hinge.co/privacy.html"));
-
     }
+
+    private ScalableVideoView mBackgroundVideo;
+    private TextView mTvTermsofService;
+    private TextView mTvPrivacyPolicy;
+    private TextView mtvPhone;
+    private Button mbtn_facebook;
 
     //this function will initialise views
     private void initviews() {
         mBackgroundVideo = findViewById(R.id.videoView);
         mTvTermsofService = findViewById(R.id.tvTermsofService);
         mTvPrivacyPolicy = findViewById(R.id.tvPrivacyPolicy);
+        mtvPhone = findViewById(R.id.tvPhone);
+        mbtn_facebook = findViewById(R.id.btn_facebook);
+
         backgroundVideo();
+        settingClickListeners();
+    }
+
+    private void settingClickListeners() {
+        mTvTermsofService.setOnClickListener(v -> urlOpner("https://hinge.co/terms.html"));
+        mTvPrivacyPolicy.setOnClickListener(v -> urlOpner("https://hinge.co/privacy.html"));
+
+        mtvPhone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversalWithAnimation(phone_num.class);
+            }
+        });
+
+        mbtn_facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversalWithAnimation(phone_num.class);
+            }
+        });
     }
 
     //this function is responsible for the background video
@@ -48,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         } catch (IOException e) {
             e.printStackTrace();
+            //ignore
         }
     }
 
@@ -58,5 +83,11 @@ public class MainActivity extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
+    }
+
+    //this function handles moving between activities
+    private void activityTriversalWithAnimation(Class classname) {
+        Intent intent = new Intent(MainActivity.this, classname);
+        startActivity(intent);
     }
 }
