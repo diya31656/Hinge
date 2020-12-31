@@ -51,7 +51,8 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center|start</item>
-        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginStart">@dimen/tv_title_name_marginStart</item>
+
         <item name="android:fontFamily">@font/modern_era_bold</item>
         <item name="android:textSize">@dimen/tv_title_name_textSize</item>
     </style>
@@ -64,6 +65,7 @@
         <item name="android:layout_marginEnd">@dimen/overflow_icon_margin</item>
         <item name="android:layout_marginBottom">@dimen/overflow_icon_margin</item>
     </style>
+
     <style name="left_arrow">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
@@ -73,6 +75,7 @@
         <item name="android:layout_marginEnd">@dimen/overflow_icon_margin</item>
         <item name="android:layout_marginBottom">@dimen/overflow_icon_margin</item>
     </style>
+
 
     <style name="discover_elements_cardView_style">
         <item name="android:layout_width">match_parent</item>
@@ -87,6 +90,7 @@
         <item name="android:layout_marginTop">0dp</item>
     </style>
 
+
     <style name="discover_elements_title_textview_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -95,6 +99,7 @@
         <item name="android:fontFamily">@font/modern_era_bold</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="basic_preference">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -120,11 +125,13 @@
         <item name="android:textColor">@color/line</item>
     </style>
 
+
     <style name="discover_elements_imageViewStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/discover_elements_imageviewheighht</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
+
     <style name="elements_1_preference">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">120dp</item>
@@ -152,6 +159,7 @@
         <item name="android:paddingStart">@dimen/discover_constraint_textonly_padding</item>
         <item name="android:paddingTop">@dimen/discover_constraintLayout_padding_Top</item>
     </style>
+
     <style name="Member_preference">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -193,6 +201,7 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:background">@color/bottom_action_background</item>
     </style>
+
     <style name="Prefernce_cardView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/actionbar_cardview_height</item>

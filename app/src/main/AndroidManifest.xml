@@ -9,12 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
+
         <activity android:name=".Prefernce_Activity"></activity>
         <activity android:name=".Boost" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".verified" />
+        <activity android:name=".phone_num" />
+
+
+        <activity android:name=".email_screen"></activity>
+        <activity android:name=".name_screen" />
+        <activity android:name=".DiscoverActivity"></activity>
         <activity android:name=".otp_screen" />
         <activity android:name=".phone_num" />
+
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
