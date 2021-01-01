@@ -109,6 +109,7 @@
     <string name="are_you_sure">Are you sure?</string>
     <string name="delete_your_account_will_permanently_erase_convos_with_your_connection">Delete your account will permanently erase convos with your connection.</string>
     <string name="confirm_delete">Confirm delete</string>
+
     <string name="name">Name</string>
     <string name="first_name">First name</string>
     <string name="last_name_is_optional_and_only_shared_with_matches">Last name is optional, and only shared with matches.</string>
@@ -126,6 +127,29 @@
     <string name="no">No</string>
     <string name="yes">Yes</string>
     <string name="go_back">Go back</string>
+
+    <string name="pause_my_profile">Pause My Profile</string>
+    <string name="pause">Pause</string>
+    <string name="phone_amp_email"><![CDATA[Phone & email]]></string>
+    <string name="membership">Membership</string>
+    <string name="privacy_preferences">Privacy Preferences</string>
+    <string name="safe_dating_tips">Safe Dating Tips</string>
+    <string name="licenses">Licenses</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="download_my_data">Download my data</string>
+    <string name="terms_of_service1">Terms of service</string>
+    <string name="privacy_policy1">Privacy Policy</string>
+    <string name="legal">Legal</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="connected_accounts">Connected accounts</string>
+    <string name="upgrade_to_preferred_membership">Upgrade to Preferred Membership</string>
+    <string name="emails">Emails</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="asdas_gmail_com">asdas@gmail.com</string>
+    <string name="_8452648558">8452648558</string>
+
 
 
 </resources>

@@ -1,6 +1,7 @@
 package com.example.hinge;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.hinge.data.sharedPrefNames;
 
 public class SettingActivity extends AppCompatActivity {
 
@@ -25,6 +28,8 @@ public class SettingActivity extends AppCompatActivity {
     private ImageView ivmHeart;
     private ImageView ivmMessaget;
     private TextView tvmHelpCenter;
+    private TextView tvmName;
+    private TextView tvmAccount;
 
     private void initView() {
 
@@ -33,9 +38,19 @@ public class SettingActivity extends AppCompatActivity {
         ivmHeart = findViewById(R.id.ivHeart);
         ivmMessaget = findViewById(R.id.ivMessaget);
         tvmHelpCenter = findViewById(R.id.tvHelpCenter);
+        tvmName = findViewById(R.id.tvName);
+        tvmAccount = findViewById(R.id.tvAccount);
 
+        setDataNanme();
         settingClickListeners();
 
+    }
+
+    private void setDataNanme() {
+        sharedPrefNames name = new sharedPrefNames();
+        SharedPreferences pref = getSharedPreferences(name.SHARED_PREF_NAME, MODE_PRIVATE);
+        String firstname = pref.getString(name.firstName, "Nipun");
+        tvmName.setText(firstname);
     }
 
     private void settingClickListeners() {
@@ -72,6 +87,13 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 urlOpner("https://hingeapp.zendesk.com/hc/en-us");
+            }
+        });
+
+        tvmAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(AccountActivity.class);
             }
         });
     }

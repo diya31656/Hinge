@@ -180,7 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/line1" />
 
     <TextView
-        android:id="@+id/button3"
+        android:id="@+id/tvAccount"
         style="@style/settings_item"
         android:background="@color/activity_background_colour"
         android:drawableRight="@drawable/ic_settings__1_"
@@ -196,13 +196,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view2" />
 
-    <View
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
 
     <TextView
         android:id="@+id/tvHelpCenter"
