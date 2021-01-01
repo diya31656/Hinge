@@ -29,6 +29,7 @@ public class SettingActivity extends AppCompatActivity {
     private ImageView ivmMessaget;
     private TextView tvmHelpCenter;
     private TextView tvmName;
+    private TextView tvmAccount;
 
     private void initView() {
 
@@ -38,6 +39,7 @@ public class SettingActivity extends AppCompatActivity {
         ivmMessaget = findViewById(R.id.ivMessaget);
         tvmHelpCenter = findViewById(R.id.tvHelpCenter);
         tvmName = findViewById(R.id.tvName);
+        tvmAccount = findViewById(R.id.tvAccount);
 
         setDataNanme();
         settingClickListeners();
@@ -85,6 +87,13 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 urlOpner("https://hingeapp.zendesk.com/hc/en-us");
+            }
+        });
+
+        tvmAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(AccountActivity.class);
             }
         });
     }

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_colour"
+    tools:context=".AccountActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/actionbar_cardView_style"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            style="@style/overflow_icon_style"
+            android:src="@drawable/ic_discover_overflow" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/discover_title_textStyle"
+        android:layout_marginStart="40dp"
+        android:elevation="6dp"
+        android:text="@string/account"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+    <ImageView
+        android:id="@+id/ivback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:src="@drawable/ic_left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/list_titles"
+                android:text="@string/pause_my_profile" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/pause" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_titles"
+                android:text="@string/phone_amp_email" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etPhoneNumberDisplay"
+                style="@style/list_items"
+                android:text="@string/_8452648558" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etEmailDisplay"
+                style="@style/list_items"
+                android:text="@string/asdas_gmail_com" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_titles"
+                android:text="@string/notifications" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/push_notification" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/emails" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_titles"
+                android:text="@string/membership" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/upgrade_to_preferred_membership" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_titles"
+                android:text="@string/connected_accounts" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/facebook" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/instagram" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_titles"
+                android:text="@string/legal" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/tvPrivacyPolicy"
+                style="@style/list_items"
+                android:text="@string/privacy_policy1" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/tvTermsofService"
+                style="@style/list_items"
+                android:text="@string/terms_of_service1" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/privacy_preferences" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/tvsafeDating"
+                style="@style/list_items"
+                android:text="@string/safe_dating_tips" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/tvLicenses"
+                style="@style/list_items"
+                android:text="@string/licenses" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/list_items"
+                android:text="@string/download_my_data" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <ImageView
+                style="@style/discover_Horizondal_line"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/tvLogout"
+                style="@style/list_items"
+                android:layout_marginStart="0dp"
+                android:gravity="center"
+                android:text="Log Out" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <ImageView
+                style="@style/discover_Horizondal_line"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tvDelete"
+                style="@style/list_items"
+                android:layout_marginStart="0dp"
+                android:gravity="center"
+                android:text="@string/delete_account" />
+
+            <ImageView
+                style="@style/discover_Horizondal_line"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
