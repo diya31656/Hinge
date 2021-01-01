@@ -26,14 +26,8 @@ public class MainActivity extends AppCompatActivity {
         check();
         initviews();
 
-
-
-
-
-
         mTvTermsofService.setOnClickListener(v -> urlOpner("https://hinge.co/terms.html"));
         mTvPrivacyPolicy.setOnClickListener(v -> urlOpner("https://hinge.co/privacy.html"));
-
 
     }
 
