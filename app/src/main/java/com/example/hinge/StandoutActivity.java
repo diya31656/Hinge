@@ -3,6 +3,7 @@ package com.example.hinge;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,11 +18,12 @@ public class StandoutActivity extends AppCompatActivity {
         initViews();
     }
 
-    ImageView ivmHinge;
-    ImageView ivmStar;
-    ImageView ivmHeart;
-    ImageView ivmMessaget;
-    ImageView ivmSettings;
+    private ImageView ivmHinge;
+    private ImageView ivmStar;
+    private ImageView ivmHeart;
+    private ImageView ivmMessaget;
+    private ImageView ivmSettings;
+    private Button btnmRose;
 
     private void initViews() {
         ivmHinge = findViewById(R.id.ivHinge);
@@ -29,6 +31,7 @@ public class StandoutActivity extends AppCompatActivity {
         ivmHeart = findViewById(R.id.ivHeart);
         ivmMessaget = findViewById(R.id.ivMessaget);
         ivmSettings = findViewById(R.id.ivSettings);
+        btnmRose = findViewById(R.id.btnRose);
 
         settingClickListeners();
     }
@@ -59,6 +62,13 @@ public class StandoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 activityTriversal(SettingActivity.class);
+            }
+        });
+
+        btnmRose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(Roses_activity.class);
             }
         });
 
