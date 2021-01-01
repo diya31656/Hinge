@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ethnicity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dot_bg" />
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle1_bg"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="55dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ivCircle"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_alignEnd="@+id/ivCircle"
+        android:layout_alignBottom="@+id/ivCircle"
+        android:padding="10dp"
+        android:src="@drawable/ic_globe" />
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/ivCircle"
+        android:background="@drawable/circle_grey" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCircle"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tiempos_headline_bold"
+        android:text="What's your"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:fontFamily="@font/tiempos_headline_bold"
+        android:text="ethnicity?"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tvAmerican"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:layout_below="@id/textView"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="230dp"
+        android:text="American Indian"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tveast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:layout_below="@id/tvAmerican"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="230dp"
+        android:text="East Asian"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvmiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:layout_below="@id/tveast"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="230dp"
+        android:text="Middle Eastern"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvsouth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:layout_below="@id/tvmiddle"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="230dp"
+        android:text="South Asian"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvother"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:layout_below="@id/tvsouth"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="230dp"
+        android:text="other"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvaAfrican"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:padding="15dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="70dp"
+        android:text="African Descent"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvhispanic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:padding="15dp"
+        android:layout_below="@id/tvaAfrican"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="70dp"
+        android:text="African Descent"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvpacific"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:padding="15dp"
+        android:layout_below="@id/tvhispanic"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="70dp"
+        android:text="Pacific Islander"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:padding="15dp"
+        android:layout_below="@id/tvpacific"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="70dp"
+        android:text="White/Caucasian"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvprefer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:padding="15dp"
+        android:layout_below="@id/tvwhite"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="70dp"
+        android:text="Prefer Not to Say"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_name_bg"
+        android:layout_below="@id/tvother"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvother"
+        android:src="@drawable/ic_check"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="37dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvother"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/modern_era_regular"
+        android:text="Visible on profile"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="50dp"/>
+    <ImageView
+        android:id="@+id/ivNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/phone_next_white" />
+
+
+</RelativeLayout>
