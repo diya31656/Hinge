@@ -68,7 +68,7 @@ public class DOB extends AppCompatActivity {
             public void onClick(View v) {
                 saveData();
                 if(isBtnActive){
-                    activityTriversalWithAnimation(DiscoverActivity.class);
+                    activityTriversalWithAnimation(ethnicity.class);
                 }
 
             }
