@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".highest_level">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dot_bg" />
+    <ImageView
+        android:id="@+id/ivCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle1_bg"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="55dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ivCircle"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_alignEnd="@+id/ivCircle"
+        android:layout_alignBottom="@+id/ivCircle"
+        android:padding="10dp"
+        android:src="@drawable/ic_mortarboard" />
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivCircle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/ivCircle"
+        android:background="@drawable/circle_grey" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCircle"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/tiempos_headline_bold"
+        android:text="What's the highest"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:fontFamily="@font/tiempos_headline_bold"
+        android:text="level you attained?"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tvhighschool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:layout_below="@id/textView"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="230dp"
+        android:text="High school"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvpostgraduate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:layout_below="@id/tvhighschool"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="230dp"
+        android:text="Postgrad"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvundergrad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:padding="15dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="70dp"
+        android:text="Undergrad"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvprefer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_bg"
+        android:padding="15dp"
+        android:layout_below="@id/tvundergrad"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="70dp"
+        android:text="Prefer Not to Say"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_name_bg"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lock"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="408dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvpostgraduate"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/modern_era_regular"
+        android:text="Visible on profile"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="80dp"/>
+    <ImageView
+        android:id="@+id/ivNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/phone_next_white" />
+
+
+
+</RelativeLayout>
