@@ -42,6 +42,7 @@
     <dimen name="standout_card_width">310dp</dimen>
     <dimen name="standout_card_height">500dp</dimen>
     <dimen name="standout_card_marginTop">35dp</dimen>
+    <dimen name="activity_title_with_back">40dp</dimen>
 
 
 </resources>
