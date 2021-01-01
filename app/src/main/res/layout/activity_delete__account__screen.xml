@@ -5,11 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Delete_Account_Screen">
+
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/line" />
+        android:background="@color/line"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView21"
@@ -94,18 +97,18 @@
         app:layout_constraintVertical_bias="0.064" />
 
     <TextView
+        android:id="@+id/tvNotnow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Not now"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="11sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/ImageButton1"
-        app:layout_constraintEnd_toEndOf="@+id/ImageButton1"
-        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
