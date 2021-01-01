@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.UserDetails.Feedback_Activity">
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@drawable/white_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:background="@drawable/feedback"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Do yoy feel include by our gender options?"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/man_women_btn"
+        android:fontFamily="sans-serif"
+        android:text="@string/no"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/man_women_btn"
+        android:fontFamily="sans-serif"
+        android:text="@string/yes"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="15dp"
+        android:background="@color/line"
+        android:fontFamily="sans-serif"
+        android:text="@string/go_back"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView19"
+        app:layout_constraintVertical_bias="0.833" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
