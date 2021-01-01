@@ -19,12 +19,19 @@
             android:text="@string/name"
             android:textColor="@color/black" />
 
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="10dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/ic_left_arrow" />
+
     </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="10dp"
+        android:elevation="5dp"
+        android:src="@drawable/ic_left_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view4"
@@ -37,9 +44,12 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
+    <EditText
+        android:backgroundTint="@color/black"
+        android:id="@+id/etFirstName"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:hint="@string/first_name"
@@ -53,20 +63,14 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         app:layout_constraintVertical_bias="0.043" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="330dp"
-        android:layout_height="2dp"
-        android:background="@color/line"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.106" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
+
+    <EditText
+        android:backgroundTint="@color/black"
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:hint="@string/last_name"
@@ -77,20 +81,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName"
         app:layout_constraintVertical_bias="0.054" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="330dp"
         android:layout_height="2dp"
-        android:background="@color/line"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.587"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintVertical_bias="0.23000002" />
 
     <TextView
         android:id="@+id/textView16"

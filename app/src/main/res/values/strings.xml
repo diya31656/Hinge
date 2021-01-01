@@ -27,7 +27,7 @@
     <string name="maximum_distance">Maximum distance</string>
     <string name="basic_preference">Basic Preferences</string>
     <string name="member_preferences">Member Preferences</string>
-    <string name="women">Women</string>
+
     <string name="place_name">Place Name</string>
     <string name="open_to_all">Open to all</string>
     <string name="religion">Religion</string>
@@ -46,7 +46,7 @@
     <string name="buriram">Buriram</string>
     <string name="south_asian">South Asian</string>
     <string name="don_t_want_children">Don\'t want children</string>
-    <string name="no">No</string>
+
     <string name="praphamontree">Praphamontree</string>
     <string name="buddhist">Buddhist</string>
     <string name="thailand">Thailand</string>
@@ -108,7 +108,7 @@
     <string name="find_your_person_sooner">Find your person sooner</string>
     <string name="are_you_sure">Are you sure?</string>
     <string name="delete_your_account_will_permanently_erase_convos_with_your_connection">Delete your account will permanently erase convos with your connection.</string>
-    <string name="confirm_delete">Confirm delete</string>
+    <string name="confirm_delete">Confirm delete</string>o
 
     <string name="name">Name</string>
     <string name="first_name">First name</string>
@@ -149,7 +149,17 @@
     <string name="notifications">Notifications</string>
     <string name="asdas_gmail_com">asdas@gmail.com</string>
     <string name="_8452648558">8452648558</string>
+    <string name="my_virtues">My virtues</string>
+    <string name="work">Work</string>
+    <string name="android_app_development">Android app development</string>
 
+
+    <string name="job_title">Job title</string>
+    <string name="full_stack_android_developmeer">Full stack Android developmeer</string>
+    <string name="masai">Masai</string>
+    <string name="school">School</string>
+    <string name="education_level">Education level</string>
+    <string name="bootcamp">Bootcamp</string>
 
 
 </resources>

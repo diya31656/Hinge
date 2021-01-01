@@ -7,4 +7,6 @@ public class sharedPrefNames {
     public final String lastName = "lastName";
     public final String email= "email";
     public final String age= "age";
+    public final String gender= "gender";
+    public final String ethanicity= "ethanicity";
 }

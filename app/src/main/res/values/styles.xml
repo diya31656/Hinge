@@ -292,5 +292,49 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="title_secondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/faceBook_btn_background</item>
+    </style>
+
+    <style name="card_photo">
+        <item name="android:layout_width">115dp</item>
+        <item name="android:layout_height">115dp</item>
+        <item name="android:layout_margin">12dp</item>
+    </style>
+
+    <style name="question_card_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="list_userDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="list_userDetail2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_medium</item>
+        <item name="android:textColor">@color/line</item>
+    </style>
+
 
 </resources>

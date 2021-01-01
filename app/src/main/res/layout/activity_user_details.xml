@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        style="@style/actionbar_cardView_style"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/discover_title_textStyle"
+        android:layout_marginStart="40dp"
+        android:elevation="6dp"
+        android:text="@string/account"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+
+    <ImageView
+        android:id="@+id/ivback"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        style="@style/actionbar_cardView_style"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/title_secondary"
+        android:layout_marginStart="45dp"
+        android:elevation="5dp"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <TextView
+        style="@style/title_secondary"
+        android:layout_marginLeft="75dp"
+        android:elevation="5dp"
+        android:text="View"
+        android:textColor="@color/line"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/list_titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:paddingBottom="8dp"
+                android:text="My photos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                style="@style/card_photo"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/and1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                style="@style/card_photo"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@+id/cardView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/and2" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                style="@style/card_photo"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_pic" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                style="@style/card_photo"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cardView8"
+                app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/and4" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView14"
+                style="@style/card_photo"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/cardView13"
+                app:layout_constraintStart_toEndOf="@+id/cardView7"
+                app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/and5" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView15"
+                style="@style/card_photo"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/cardView14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/and6" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/list_titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="65dp"
+                android:paddingBottom="10dp"
+                android:text="My answers"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView15" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView16"
+                style="@style/question_card_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+                <TextView
+                    style="@style/discover_elements_title_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I geek out on" />
+
+                <TextView
+                    style="@style/discover_elements_title_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="Sweets."
+                    android:textColor="@color/line" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                style="@style/question_card_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView16">
+
+                <TextView
+                    style="@style/discover_elements_title_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I'll know it's time to delete Hinge when" />
+
+                <TextView
+                    style="@style/discover_elements_title_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="I complete this project."
+                    android:textColor="@color/line" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                style="@style/question_card_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card2">
+
+                <TextView
+                    style="@style/discover_elements_title_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I take pride in" />
+
+                <TextView
+                    style="@style/discover_elements_title_textview_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="being open source."
+                    android:textColor="@color/line" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/card3">
+
+                <TextView
+                    android:id="@+id/virtues"
+                    style="@style/list_titles"
+                    android:text="@string/my_virtues"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="@string/work" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/android_app_development" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="@string/job_title" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/full_stack_android_developmeer" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="@string/school" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/masai" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="@string/education_level" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/bootcamp" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Religious Beliefs" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="Prefer Not to say" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Home town" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="some place" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Politics" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="Prefer Not to Say" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/vitals"
+                    style="@style/list_titles"
+                    android:text="@string/my_virtues"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/tvNameTitle"
+                    style="@style/list_userDetail"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/list_userDetail2"
+                    android:text="name" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/tvGenderTitle"
+                    style="@style/list_userDetail"
+                    android:text="Gender" />
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    style="@style/list_userDetail2"
+                    android:text="Man" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/tvAgeTitle"
+                    style="@style/list_userDetail"
+                    android:text="Age" />
+
+                <TextView
+                    android:id="@+id/tvAge"
+                    style="@style/list_userDetail2"
+                    android:text="20" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/tvHeightTitle"
+                    style="@style/list_userDetail"
+                    android:text="Height" />
+
+                <TextView
+                    android:id="@+id/tvHeight"
+                    style="@style/list_userDetail2"
+                    android:text="@string/_5_6" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/tvLocationTitle"
+                    style="@style/list_userDetail"
+                    android:text="Location" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    style="@style/list_userDetail2"
+                    android:text="Bangalore" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/tvEthanicityTitle"
+                    style="@style/list_userDetail"
+                    android:text="Ethnicity" />
+
+                <TextView
+                    android:id="@+id/tvEthanicity"
+                    style="@style/list_userDetail2"
+                    android:text="South Asian" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/tvChildernTitle"
+                    style="@style/list_userDetail"
+                    android:text="Children" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="Don't have childern" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Family Plans" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="Don't want childern" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    android:id="@+id/myVices"
+                    style="@style/list_titles"
+                    android:text="My Vices"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Drinking" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/no" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Smoking" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/no" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Marijuana" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/no" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Drugs" />
+
+                <TextView
+                    style="@style/list_userDetail2"
+                    android:text="@string/no" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_titles"
+                    android:text="My account"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+                <ImageView style="@style/discover_Horizondal_line" />
+
+                <TextView
+                    style="@style/list_userDetail"
+                    android:text="Recent Instagram Feed" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    style="@style/discover_Horizondal_line"
+                    android:layout_marginBottom="30dp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
