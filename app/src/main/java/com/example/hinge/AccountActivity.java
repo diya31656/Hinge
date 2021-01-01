@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +30,8 @@ public class AccountActivity extends AppCompatActivity {
     private TextView tvmLicenses;
     private TextView tvLogout;
     private TextView tvmDelete;
+    private ImageView ivmback;
+
 
     private void initview() {
         etmPhoneNumberDisplay = findViewById(R.id.etPhoneNumberDisplay);
@@ -39,6 +42,7 @@ public class AccountActivity extends AppCompatActivity {
         tvmLicenses = findViewById(R.id.tvLicenses);
         tvLogout = findViewById(R.id.tvLogout);
         tvmDelete = findViewById(R.id.tvDelete);
+        ivmback = findViewById(R.id.ivback);
 
         setData();
         setListeners();
@@ -79,7 +83,14 @@ public class AccountActivity extends AppCompatActivity {
         tvmDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                deleteData();
+                activityTriversalWithAnimation(Delete_Account_Screen.class);
+            }
+        });
+
+        ivmback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
             }
         });
     }
@@ -94,7 +105,7 @@ public class AccountActivity extends AppCompatActivity {
 
     private void setData() {
         sharedPrefNames name = new sharedPrefNames();
-        etmPhoneNumberDisplay.setText(getData("+91 "+name.phoneNumber));
+        etmPhoneNumberDisplay.setText("+91 "+getData(name.phoneNumber));
         etmEmailDisplay.setText(getData(name.email));
     }
 
@@ -115,4 +126,8 @@ public class AccountActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
 }
