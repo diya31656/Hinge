@@ -161,6 +161,7 @@
     <string name="work">Work</string>
     <string name="android_app_development">Android app development</string>
 
+    <string name="no">No</string>
 
     <string name="job_title">Job title</string>
     <string name="full_stack_android_developmeer">Full stack Android developmeer</string>
@@ -168,6 +169,7 @@
     <string name="school">School</string>
     <string name="education_level">Education level</string>
     <string name="bootcamp">Bootcamp</string>
+    <string name="women">Woman</string>
 
 
 </resources>

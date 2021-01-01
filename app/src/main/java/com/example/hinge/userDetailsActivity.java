@@ -109,7 +109,7 @@ public class userDetailsActivity extends AppCompatActivity {
         sharedPrefNames name = new sharedPrefNames();
         tvmTitle.setText(getData(name.firstName));
         tvmName.setText(getData(name.firstName));
-        tvmGender.setText(getData(name.gender));
+        tvmGender.setText("Man");
         tvmAge.setText(getData(name.age));
         if(!getData(name.ethanicity).equals("nan")) tvmEthanicity.setText(getData(name.ethanicity));
 
