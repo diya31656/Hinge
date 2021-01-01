@@ -73,7 +73,7 @@ public class phone_num extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().length() == 10) {
+                if (s.toString().trim().length() < 10 || s.toString().trim().length()>10) {
                     isButtonEnabled = false;
                     ivmNext.setImageResource(R.drawable.phone_next_white);
                 } else {

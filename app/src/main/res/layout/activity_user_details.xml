@@ -58,6 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
     <TextView
+        android:id="@+id/tvView"
         style="@style/title_secondary"
         android:layout_marginLeft="75dp"
         android:elevation="5dp"
@@ -520,8 +521,20 @@
 
             </LinearLayout>
 
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:elevation="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/line_horizonda_purplel"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

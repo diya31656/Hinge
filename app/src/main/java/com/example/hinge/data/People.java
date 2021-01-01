@@ -5,6 +5,7 @@ import com.example.hinge.R;
 public class People {
     protected Matches lisa = new Matches();
     protected Matches tzuyu = new Matches();
+    protected Matches user = new Matches();
 
     public Matches getLisa() {
         if (lisa.getName() == null) {
@@ -87,5 +88,47 @@ public class People {
         }
         return tzuyu;
     }
+
+    public Matches getUser() {
+
+        user.setName("Tzuyu");
+        user.setImageTitles(new String[]{
+                "my logo soo cool",
+                "Hey",
+                "Build week.",
+                "Always put trash in trash can.",
+                "Android is my name, fixing things is my game.",
+                "My not so favorite mode of transport"
+        });
+        user.setImages(new int[]{
+                R.drawable.and1,
+                R.drawable.and2,
+                R.drawable.and3,
+                R.drawable.and4,
+                R.drawable.and5,
+                R.drawable.and6,
+        });
+        user.setTextContentTitles(new String[]{
+                "I geek out on",
+                "I'll know it's time to delete Hinge when",
+                "I take pride in",
+        });
+        user.setTextContent(new String[]{
+                "Sweets.",
+                "I complete my project.",
+                "being open source.",
+        });
+        user.setAge(21);
+        user.setGender("Woman");
+        user.setReligion("Buddhist");
+        user.setHeight("5' 7\"");
+        user.setLocation("Tainan");
+        user.setEthnicity("South Asian");
+        user.setEducation("Hanlim");
+        user.setCountry("Taiwan");
+
+        return user;
+    }
+
 
 }

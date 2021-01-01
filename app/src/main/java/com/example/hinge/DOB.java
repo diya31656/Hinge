@@ -40,7 +40,7 @@ public class DOB extends AppCompatActivity {
     }
 
     int age;
-
+    boolean isBtnActive=false;
     private void setListeners() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             datepicker.setOnDateChangedListener(new DatePicker.OnDateChangedListener() {
@@ -50,7 +50,15 @@ public class DOB extends AppCompatActivity {
                     LocalDate currentdate = LocalDate.of(year, 1, dayOfMonth);
                     Period period = Period.between(currentdate, today);
                     mtvage.setText("Age " + period.getYears());
-                    age = year;
+                    age = period.getYears();
+                    if(age>=18){
+                        isBtnActive = true;
+                        mivNext.setImageResource(R.drawable.phone_next_black);
+                    }
+                    else{
+                        isBtnActive = false;
+                        mivNext.setImageResource(R.drawable.phone_next_white);
+                    }
                 }
             });
         }
@@ -59,7 +67,10 @@ public class DOB extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveData();
-                activityTriversalWithAnimation(DiscoverActivity.class);
+                if(isBtnActive){
+                    activityTriversalWithAnimation(DiscoverActivity.class);
+                }
+
             }
         });
 

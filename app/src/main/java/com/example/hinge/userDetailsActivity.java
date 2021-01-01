@@ -32,6 +32,7 @@ public class userDetailsActivity extends AppCompatActivity {
     private TextView tvmAgeTitle;
     private TextView tvmAge;
     private TextView tvmEthanicity;
+    private TextView tvmView;
 
 
     private void initView() {
@@ -44,6 +45,7 @@ public class userDetailsActivity extends AppCompatActivity {
         tvmAgeTitle = findViewById(R.id.tvAgeTitle);
         tvmAge = findViewById(R.id.tvAge);
         tvmEthanicity = findViewById(R.id.tvEthanicity);
+        tvmView = findViewById(R.id.tvView);
 
 
         setData();
@@ -94,6 +96,13 @@ public class userDetailsActivity extends AppCompatActivity {
                 activityTriversalWithAnimation(Age_Activity.class);
             }
         });
+
+        tvmView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(viewActivity.class);
+            }
+        });
     }
 
     private void setData() {
@@ -114,6 +123,11 @@ public class userDetailsActivity extends AppCompatActivity {
 
     private void activityTriversalWithAnimation(Class classname) {
         Intent intent = new Intent(userDetailsActivity.this, classname);
+        startActivity(intent);
+    }
+    private void activityTriversal(Class classname) {
+        Intent intent = new Intent(userDetailsActivity.this, classname);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
 

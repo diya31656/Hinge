@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +33,7 @@ public class SettingActivity extends AppCompatActivity {
     private TextView tvmName;
     private TextView tvmAccount;
     private CardView nameCard;
+    private Button learnMore;
 
     private void initView() {
 
@@ -43,6 +45,7 @@ public class SettingActivity extends AppCompatActivity {
         tvmName = findViewById(R.id.tvName);
         tvmAccount = findViewById(R.id.tvAccount);
         nameCard = findViewById(R.id.cardView5);
+        learnMore = findViewById(R.id.button5);
 
         setDataNanme();
         settingClickListeners();
@@ -103,6 +106,12 @@ public class SettingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 activityTriversalAnimation(userDetailsActivity.class);
+            }
+        });
+        learnMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversalAnimation(Learn_more_Activity.class);
             }
         });
     }

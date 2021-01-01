@@ -9,26 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
-        <activity android:name=".userDetailsActivity"></activity>
+        <activity android:name=".viewActivity"></activity>
+        <activity android:name=".userDetailsActivity" />
         <activity android:name=".AccountActivity" />
         <activity android:name=".ethnicity" />
-
-        <activity android:name=".highest_level"></activity>
+        <activity android:name=".highest_level" />
         <activity android:name=".ethnicity" />
-
-
-        <activity android:name=".data.UserDetails.Feedback_Activity"></activity>
+        <activity android:name=".data.UserDetails.Feedback_Activity" />
         <activity android:name=".data.UserDetails.Why_Activity" />
         <activity android:name=".data.UserDetails.Age_Activity" />
         <activity android:name=".data.UserDetails.Gender_Activity" />
         <activity android:name=".data.UserDetails.Name_Activity" />
-
-        <activity android:name=".smoke"></activity>
+        <activity android:name=".smoke" />
         <activity android:name=".ethnicity" />
-        <activity android:name=".AccountActivity"></activity>
-
-
-
+        <activity android:name=".AccountActivity" />
         <activity android:name=".Delete_Account_Screen" />
         <activity android:name=".Learn_more_Activity" />
         <activity android:name=".Matches_Activity" />
