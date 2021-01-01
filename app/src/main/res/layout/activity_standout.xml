@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView12">
 
         <Button
+            android:id="@+id/btnRose"
             style="@style/rose_btn_style"
             android:background="@color/rose_background"
             android:drawableStart="@drawable/ic_rose"
