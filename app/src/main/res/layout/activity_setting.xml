@@ -205,7 +205,7 @@
         app:layout_constraintTop_toBottomOf="@+id/line1" />
 
     <TextView
-        android:id="@+id/button2"
+        android:id="@+id/tvHelpCenter"
         style="@style/settings_item"
         android:background="@color/activity_background_colour"
         android:drawableRight="@drawable/ic_question"
@@ -217,7 +217,7 @@
         android:id="@+id/imageView9"
         style="@style/discover_Horizondal_line"
         app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpCenter" />
 
     <TextView
         android:id="@+id/textView10"
@@ -269,7 +269,7 @@
         android:gravity="center"
         android:text="@string/just_joined"
         android:textColor="@color/white"
-        android:textSize="10dp"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
