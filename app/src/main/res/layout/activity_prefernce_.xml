@@ -8,39 +8,43 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         style="@style/actionbar_cardView_style"
+        app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tvName_discover"
-            style="@style/discover_title_textStyle"
-            android:layout_marginStart="30dp"
-            android:text="@string/preference"
-            android:textColor="@color/black" />
 
-        <ImageView
-            android:layout_height="wrap_content"
-            android:layout_width="10dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/ic_left_arrow" />
     </androidx.cardview.widget.CardView>
 
-    <View
-        android:id="@+id/view5"
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="@drawable/line"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView" />
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/discover_title_textStyle"
+        android:layout_marginStart="40dp"
+        android:elevation="6dp"
+        android:text="@string/preference"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
 
+
+    <ImageView
+        android:id="@+id/ivback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:src="@drawable/ic_left_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scrollbars="none"
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <LinearLayout
@@ -48,28 +52,250 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cvUserImagecard1"
-                style="@style/discover_elements_cardView_style"
-                app:cardCornerRadius="@dimen/discover_elements_cardView_cornerRadius">
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/i_m_interested_in" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+            <ImageView style="@style/discover_Horizondal_line" />
 
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/etInterest"
+                style="@style/preference_list2"
+                android:text="@string/women" />
 
 
+            <ImageView style="@style/discover_Horizondal_line" />
 
 
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/my_location" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etLocation"
+                style="@style/preference_list2"
+                android:text="@string/agra" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/faceBook_btn_background"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:text="@string/upgrade_for_access" />
+            <TextView
+                style="@style/preference_list1"
+                android:textColor="@color/black"
+                android:text="@string/age_range" />
 
 
+            <ImageView style="@style/discover_Horizondal_line" />
+
+
+            <TextView
+                android:id="@+id/etAge"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/religion"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etReligion"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/ethnicity"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etEthnicity"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/height"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etHeight"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/politics"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etPolitics"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/smoking"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etSmoking"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/drinking"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etDrinking"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/drugs"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etDrugs"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/marijuana"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etMarijuana"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/education"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etEducation"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/children"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/etChildren"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
+            <TextView
+                style="@style/preference_list1"
+                android:text="@string/family_plans"
+                android:textColor="@color/black"/>
+
+            <ImageView style="@style/discover_Horizondal_line" />
+
+            <TextView
+                android:id="@+id/FamilyPlans"
+                style="@style/preference_list2"
+                android:textColor="@color/line"
+                android:drawableEnd="@drawable/ic_padlock"
+                android:paddingRight="20dp"
+                android:text="@string/open_to_all" />
+
+            <ImageView style="@style/discover_Horizondal_line" />
 
         </LinearLayout>
 
     </ScrollView>
+
 
 
 

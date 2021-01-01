@@ -269,6 +269,27 @@
         <item name="android:paddingRight">20dp</item>
         <item name="android:textSize">16sp</item>
     </style>
+    <style name="preference_list1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_bold</item>
+        <item name="android:textColor">@color/line</item>
+    </style>
+
+    <style name="preference_list2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/discover_elements_title_textview_margin</item>
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:textSize">@dimen/discover_elements_title_textview_textSzie</item>
+        <item name="android:fontFamily">@font/modern_era_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="list_titles">
         <item name="android:layout_width">wrap_content</item>
