@@ -102,7 +102,13 @@
     <string name="send_unlimited_likes">Send unlimited likes.</string>
     <string name="all_in_one_organised_place">All in one organised place.</string>
     <string name="education_family_plans_politics_and_vices">Education, family plans, politics and vices</string>
-
+    <string name="recurring_billing_cancel_anytime">Recurring billing, cancel anytime.</string>
+    <string name="by_tapping_continue_your_payment_will_be_charged_to_your_google_play_account_and_yours_subscription_will_automatically_renew_for_the_same_package_length_at_the_same_price_until_you_cancel_in_settings_in_the_play_store_by_tapping_continue_you_agree_to_our">By tapping Continue, your payment will be charged to your Google play account, and yours subscription will automatically renew for the same package length at the same price until you cancel in settings in the Play Store. By tapping Continue, you agree to our</string>
+    <string name="restore_subscription">Restore subscription</string>
+    <string name="find_your_person_sooner">Find your person sooner</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="delete_your_account_will_permanently_erase_convos_with_your_connection">Delete your account will permanently erase convos with your connection.</string>
+    <string name="confirm_delete">Confirm delete</string>
 
 
 </resources>
