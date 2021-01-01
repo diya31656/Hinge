@@ -45,7 +45,7 @@ public class name_screen extends AppCompatActivity {
             public void onClick(View v) {
                 if (isButtonEnabled) {
                     saveData();
-                    activityTriversalWithAnimation(DiscoverActivity.class);
+                    activityTriversalWithAnimation(email_screen.class);
                 } else {
                     metFirstName.setError("Please enter valid name");
                 }

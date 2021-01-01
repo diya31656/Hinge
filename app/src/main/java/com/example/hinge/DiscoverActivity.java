@@ -60,6 +60,9 @@ public class DiscoverActivity extends AppCompatActivity {
     ImageView ivmLike8;
     ImageView ivmLike9;
     ImageView ivmStarDiscoverScreen;
+    ImageView ivmHeartDiscoverScreen;
+    ImageView ivmMessagetDiscoverScreen;
+    ImageView ivmSettingsDiscoverScreen;
 
     private void initView() {
         tvmName = findViewById(R.id.tvName_discover);
@@ -99,7 +102,10 @@ public class DiscoverActivity extends AppCompatActivity {
         ivmLike7 = findViewById(R.id.ivLike7);
         ivmLike8 = findViewById(R.id.ivLike8);
         ivmLike9 = findViewById(R.id.ivLike9);
-        ivmStarDiscoverScreen = findViewById(R.id.ivStarDiscoverScreen);
+        ivmStarDiscoverScreen = findViewById(R.id.ivStar);
+        ivmHeartDiscoverScreen = findViewById(R.id.ivHeart);
+        ivmMessagetDiscoverScreen = findViewById(R.id.ivMessaget);
+        ivmSettingsDiscoverScreen = findViewById(R.id.ivSettings);
 
 
         settingClickListeners();
@@ -172,6 +178,27 @@ public class DiscoverActivity extends AppCompatActivity {
                 activityTriversal(StandoutActivity.class);
             }
         });
+        ivmHeartDiscoverScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(Like_you_Activity.class);
+            }
+        });
+
+        ivmMessagetDiscoverScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(Matches_Activity.class);
+            }
+        });
+
+        ivmSettingsDiscoverScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(SettingActivity.class);
+            }
+        });
+
 
     }
 
@@ -232,4 +259,5 @@ public class DiscoverActivity extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
         startActivity(intent);
     }
+
 }

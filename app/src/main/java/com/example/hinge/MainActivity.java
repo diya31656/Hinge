@@ -1,6 +1,7 @@
 package com.example.hinge;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.hinge.data.sharedPrefNames;
 import com.yqritc.scalablevideoview.ScalableType;
 import com.yqritc.scalablevideoview.ScalableVideoView;
 
@@ -21,7 +23,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        check();
         initviews();
+
+    }
+
+    private void check() {
+        sharedPrefNames name = new sharedPrefNames();
+        SharedPreferences pref = getSharedPreferences(name.SHARED_PREF_NAME, MODE_PRIVATE);
+        String phoneNumber = pref.getString(name.firstName, "12791");
+        if(!phoneNumber.equals("12791")){
+            activityTriversalWithAnimation(DiscoverActivity.class);
+        }
 
     }
 
