@@ -35,7 +35,7 @@
     <ImageView
         android:id="@+id/ivback"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="12dp"
         android:elevation="6dp"
         android:src="@drawable/ic_left_arrow"
         app:layout_constraintBottom_toBottomOf="@+id/cardView"

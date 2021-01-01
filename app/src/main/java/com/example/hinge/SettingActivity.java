@@ -5,10 +5,12 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.hinge.data.sharedPrefNames;
 
@@ -30,6 +32,8 @@ public class SettingActivity extends AppCompatActivity {
     private TextView tvmHelpCenter;
     private TextView tvmName;
     private TextView tvmAccount;
+    private CardView nameCard;
+    private Button learnMore;
 
     private void initView() {
 
@@ -40,6 +44,8 @@ public class SettingActivity extends AppCompatActivity {
         tvmHelpCenter = findViewById(R.id.tvHelpCenter);
         tvmName = findViewById(R.id.tvName);
         tvmAccount = findViewById(R.id.tvAccount);
+        nameCard = findViewById(R.id.cardView5);
+        learnMore = findViewById(R.id.button5);
 
         setDataNanme();
         settingClickListeners();
@@ -96,6 +102,24 @@ public class SettingActivity extends AppCompatActivity {
                 activityTriversal(AccountActivity.class);
             }
         });
+        nameCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversalAnimation(userDetailsActivity.class);
+            }
+        });
+        learnMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversalAnimation(Learn_more_Activity.class);
+            }
+        });
+    }
+
+    private void activityTriversalAnimation(Class classname) {
+        Intent intent = new Intent(SettingActivity.this, classname);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(intent);
     }
 
     private void activityTriversal(Class classname) {
