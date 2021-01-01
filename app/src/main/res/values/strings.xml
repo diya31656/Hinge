@@ -109,6 +109,25 @@
     <string name="are_you_sure">Are you sure?</string>
     <string name="delete_your_account_will_permanently_erase_convos_with_your_connection">Delete your account will permanently erase convos with your connection.</string>
     <string name="confirm_delete">Confirm delete</string>
+
+    <string name="name">Name</string>
+    <string name="first_name">First name</string>
+    <string name="last_name_is_optional_and_only_shared_with_matches">Last name is optional, and only shared with matches.</string>
+    <string name="why">Why?</string>
+    <string name="last_name">Last name</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="age_can_only_be_changed_once">Age can only be changed once</string>
+    <string name="women">Women</string>
+    <string name="man">Man</string>
+    <string name="feedback_on_genders">Feedback on genders?</string>
+    <string name="why_last_name">Why last name?</string>
+    <string name="adding_your_last_name_helps_create_a_safer_more_authentic_and_accountable_community">Adding your last name helps create a safer, more authentic and accountable community</string>
+    <string name="ok_got_it">OK got it</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="go_back">Go back</string>
+
     <string name="pause_my_profile">Pause My Profile</string>
     <string name="pause">Pause</string>
     <string name="phone_amp_email"><![CDATA[Phone & email]]></string>
@@ -130,6 +149,7 @@
     <string name="notifications">Notifications</string>
     <string name="asdas_gmail_com">asdas@gmail.com</string>
     <string name="_8452648558">8452648558</string>
+
 
 
 </resources>
