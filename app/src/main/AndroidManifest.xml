@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hinge">
-        <activity android:name=".Delete_Account_Screen"></activity>
+        <activity android:name=".ethnicity"></activity>
+        <activity android:name=".Delete_Account_Screen" />
         <activity android:name=".Learn_more_Activity" />
         <activity android:name=".Matches_Activity" />
         <activity android:name=".Roses_activity" />
