@@ -5,4 +5,6 @@ public class sharedPrefNames {
     public final String phoneNumber = "phoneNumber";
     public final String firstName = "firstName";
     public final String lastName = "lastName";
+    public final String email= "email";
+    public final String age= "age";
 }

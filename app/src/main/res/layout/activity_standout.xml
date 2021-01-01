@@ -145,57 +145,57 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/ivhingeStandoutScreen"
+        android:id="@+id/ivHinge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_hinge_logo_greyy"
         app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
-        app:layout_constraintEnd_toStartOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
 
     <ImageView
-        android:id="@+id/ivStarDiscoverScreen"
+        android:id="@+id/ivStar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_star_bottom_action_white"
         app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
-        app:layout_constraintEnd_toStartOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintEnd_toStartOf="@+id/ivHeart"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ivhingeStandoutScreen"
+        app:layout_constraintStart_toEndOf="@+id/ivHinge"
         app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
 
     <ImageView
-        android:id="@+id/ivHeartDiscoverScreen"
+        android:id="@+id/ivHeart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_like_bottom_action"
         app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
-        app:layout_constraintEnd_toStartOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintEnd_toStartOf="@+id/ivMessaget"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ivStarDiscoverScreen"
+        app:layout_constraintStart_toEndOf="@+id/ivStar"
         app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
 
     <ImageView
-        android:id="@+id/ivMessagetDiscoverScreen"
+        android:id="@+id/ivMessaget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_message_bottom_action"
         app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
-        app:layout_constraintEnd_toStartOf="@+id/ivSettingsDiscoverScreen"
+        app:layout_constraintEnd_toStartOf="@+id/ivSettings"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ivHeartDiscoverScreen"
+        app:layout_constraintStart_toEndOf="@+id/ivHeart"
         app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
 
     <ImageView
-        android:id="@+id/ivSettingsDiscoverScreen"
+        android:id="@+id/ivSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_setting_bottom_action"
         app:layout_constraintBottom_toBottomOf="@id/bottomActionbarDiscover"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ivMessagetDiscoverScreen"
+        app:layout_constraintStart_toEndOf="@+id/ivMessaget"
         app:layout_constraintTop_toTopOf="@id/bottomActionbarDiscover" />
 </androidx.constraintlayout.widget.ConstraintLayout>

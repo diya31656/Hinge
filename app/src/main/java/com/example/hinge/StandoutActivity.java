@@ -17,21 +17,51 @@ public class StandoutActivity extends AppCompatActivity {
         initViews();
     }
 
-    ImageView ivmhingeStandoutScreen;
+    ImageView ivmHinge;
+    ImageView ivmStar;
+    ImageView ivmHeart;
+    ImageView ivmMessaget;
+    ImageView ivmSettings;
 
     private void initViews() {
-        ivmhingeStandoutScreen = findViewById(R.id.ivhingeStandoutScreen);
+        ivmHinge = findViewById(R.id.ivHinge);
+        ivmStar = findViewById(R.id.ivStar);
+        ivmHeart = findViewById(R.id.ivHeart);
+        ivmMessaget = findViewById(R.id.ivMessaget);
+        ivmSettings = findViewById(R.id.ivSettings);
 
         settingClickListeners();
     }
 
     private void settingClickListeners() {
-        ivmhingeStandoutScreen.setOnClickListener(new View.OnClickListener() {
+        ivmHinge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 activityTriversal(DiscoverActivity.class);
             }
         });
+
+        ivmHeart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(Like_you_Activity.class);
+            }
+        });
+
+        ivmMessaget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(Matches_Activity.class);
+            }
+        });
+
+        ivmSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activityTriversal(SettingActivity.class);
+            }
+        });
+
     }
 
     private void activityTriversal(Class classname) {

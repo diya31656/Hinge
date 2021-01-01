@@ -103,6 +103,7 @@
         android:layout_alignTop="@+id/tvcode"
         android:layout_alignBottom="@+id/tvline"
         android:inputType="phone"
+        android:textSize="30sp"
         android:layout_marginStart="15dp"
         android:layout_marginBottom="-8dp"
         android:layout_marginEnd="20dp"
@@ -117,6 +118,5 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
         android:background="@drawable/phone_next_white" />
-
 
 </RelativeLayout>
